@@ -192,7 +192,6 @@ header {
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         color: var(--white);
     }
 }
@@ -293,18 +292,31 @@ header {
 @media (max-width: 1660px) {
     .productos-container {
         width: 70%;
+        margin-left: 5%;
     }
 }
 
 @media (max-width: 1560px) {
     .productos-container {
         width: 80%;
+        margin-left: 5%;
     }
 }
 
 @media (max-width: 1364px) {
     .productos-container {
         width: 100%;
+        margin-left: 0%;
+    }
+
+    .card-wrapper {
+        padding-left: 0rem;
+    }
+}
+
+@media (max-width: 979px) {
+    #card-3 {
+        visibility: hidden;
     }
 }
 
