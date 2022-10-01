@@ -41,17 +41,37 @@ header {
     /* border: 1px solid white; */
     position: relative;
     height: 500px;
-    width: 70%;
     margin: auto;
 }
 
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+}
+
 .header__nav {
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}   
+
+.abajo {
+    background-color: #002632;
+    width: 100%;
+    height: 50px;
 }
 
 #logo {
-    width: 100%;
+    width: 80%;
     height: 35px;
 }
 
@@ -59,14 +79,21 @@ header {
     /* border: 1px solid red; */
     display: flex;
     text-transform: uppercase;
-    font-size: 0.8em;
-    font-family: 'Josefin Sans', sans-serif;
-    color: var(--white);
     float: left;
+    cursor: pointer;
 }
 
-.header__logo h1>span {
-    font-size: 1.2em;
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+}
+
+.header__logo span {
+    font-size: 1.3em;
     color: var(--white);
 }
 
@@ -98,7 +125,7 @@ header {
 }
 
 /* ------------- ------ MEDIA QUERIES ------ ---------- */
-@media (max-width: 1560px) {
+/* @media (max-width: 1560px) {
     .header__container {
         width: 80%;
     }
@@ -108,11 +135,12 @@ header {
     .header__container {
         width: 90%;
     }
-}
+} */
 
 .categorias__container {
     /* border: 1px solid red; */
-    width: 100%;
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     color: var(--white);
@@ -227,99 +255,13 @@ header {
     }
 }
 
-/* --------- ------ CONTENEDOR PRINICIPAL ------ --------- */
-
-/*----------------- CODIGO EMI -----------------*/
-
-.ilustracion-categorias {
-    position: relative;
-    overflow: visible;
-    width: 60%;
+#carouselExampleControls {
+    width: 75%;
     margin: auto;
-    margin-bottom: 500px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-    padding-bottom: 1rem;
-    background-image: linear-gradient(var(--card-gradient), white max(9.5rem, 27vh));
-}
-
-.card img {
-    border-radius: 0.5rem 0.5rem 0 0;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    max-height: max(10rem, 30vh);
-    mix-blend-mode: var(--card-blend-mode);
-    vertical-align: top;
-}
-
-.card img~* {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-/* .card > :last-child {
-  margin-bottom: 0;
-} */
-
-/* .card:hover,
-.card:focus-within {
-    background-color: rgb(246, 246, 246);
-} */
-
-.card h3 {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-}
-
-.card-wrapper {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-    grid-gap: 1.5rem;
-    max-width: 100vw;
-    width: 120ch;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    top: -50px;
-    left: 0px;
-    /* box-shadow: 0px 0px 15px rgba(24, 24, 24, 0.357); */
-}
-
-@media (max-width: 1660px) {
-    .productos-container {
-        width: 70%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 1560px) {
-    .productos-container {
-        width: 80%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 1364px) {
-    .productos-container {
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    .card-wrapper {
-        padding-left: 0rem;
-    }
-}
-
-@media (max-width: 979px) {
-    #card-3 {
-        visibility: hidden;
-    }
+    margin-bottom: 150px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
 }
 
 /* --------- ------ PRODUCTOS FAVORITOS ------ --------- */
@@ -641,7 +583,7 @@ header {
 }
 
 .ubicacion__logo img {
-    width: 7%;
+    width: 50px;
 }
 
 .ubicacion__logo h1>span {
