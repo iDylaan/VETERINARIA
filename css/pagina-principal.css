@@ -30,11 +30,12 @@ header {
     /* border: 1px solid red; */
     background-image: url('../imagenes/bg-header.jpg');
     background-size: cover;
-    background-position: -300px 0px;
+    background-position: -500px -300px;
     background-attachment: fixed;
     padding-top: 20px;
     margin: auto;
     width: 100%;
+    height: 400px;
 }
 
 .header__container {
@@ -98,9 +99,7 @@ header {
 }
 
 .header__navegador-central {
-    /* border: 1px solid red; */
     text-align: center;
-
 }
 
 .navegeador-lateral {
@@ -124,23 +123,10 @@ header {
     opacity: 100%;
 }
 
-/* ------------- ------ MEDIA QUERIES ------ ---------- */
-/* @media (max-width: 1560px) {
-    .header__container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 1364px) {
-    .header__container {
-        width: 90%;
-    }
-} */
-
 .categorias__container {
     /* border: 1px solid red; */
     width: 70%;
-    margin: auto;
+    margin: 140px auto 0px auto;
     display: flex;
     justify-content: space-around;
     color: var(--white);
@@ -152,13 +138,13 @@ header {
     padding: 20px 30px;
     border: 1px solid var(--white);
     border-radius: 5px;
-    margin: 180px auto 0px auto;
     font-size: 2em;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 150ms;
     display: flex;
+    align-items: baseline;
 }
 
 .categorias__estetica i,
@@ -193,7 +179,16 @@ header {
     border: 1px solid var(--atencion-medica-bg-categoria);
 }
 
-@media (max-width: 1175px) {
+#carouselExampleControls {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 150px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 1500px) {
     .categorias__estetica,
     .categorias__productos,
     .categorias__atencion-medica {
@@ -201,12 +196,38 @@ header {
     }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1300px) {
     .categorias__estetica,
     .categorias__productos,
     .categorias__atencion-medica {
-        font-size: 1.2em;
-        margin: 40px auto 0px auto;
+        font-size: 1.3em;
+    }
+
+    .header__logo h1 {
+        visibility: hidden;
+        position: absolute;
+     }
+
+    .header__logo {
+        /* border: 1px solid red; */
+        display: inline;
+        cursor: pointer;
+    }    
+
+    #logo {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1140px) {
+    /* BOTON RESPONSIVE PARA MOBILES */
+    
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.5em;
+        margin: 10px auto 0px auto;
         width: 80%;
         text-align: center;
         display: flex;
@@ -220,24 +241,31 @@ header {
     }
 
     .categorias__container {
+        /* border: 1px solid red; */
+        margin: 50px 0 0 0;
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         color: var(--white);
+        justify-content: center;
+
+    }
+
+    #carouselExampleControls {
+        width: 85%;
     }
 }
 
-@media (max-width: 550px) {
-    .categorias__container {
-        position: relative;
-        width: 42%;
-        margin: auto;
-    }
-
+@media (max-width: 800px) {
     .categorias__estetica,
     .categorias__productos,
     .categorias__atencion-medica {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        margin: 10px auto 0px auto;
+        width: 80%;
+        text-align: center;
+        display: flex;
     }
 
     .categorias__estetica i,
@@ -245,6 +273,71 @@ header {
     .categorias__atencion-medica i{
         margin-right: 50px;
         margin-left: 30px;
+    }
+
+    .categorias__container {
+        /* border: 1px solid red; */
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
+    }
+
+    #carouselExampleControls {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.2em;
+        margin: 10px auto 0px auto;
+        width: 80%;
+    }
+
+    .categorias__estetica i,
+    .categorias__productos i,
+    .categorias__atencion-medica i{
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+
+    .categorias__container {
+        width: 100%;
+        margin: 70px auto 0 auto;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 550px) {
+    .categorias__container {
+        width: 42%;
+        margin: 100px auto 0 auto;
+    }
+
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .categorias__estetica i,
+    .categorias__productos i,
+    .categorias__atencion-medica i{
+        margin: auto;
     }
 
     .categorias__estetica p,
@@ -255,16 +348,10 @@ header {
     }
 }
 
-#carouselExampleControls {
-    width: 75%;
-    margin: auto;
-    margin-bottom: 150px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-}
+
 
 /* --------- ------ PRODUCTOS FAVORITOS ------ --------- */
+
 .productos-favoritos__container {
     width: 100%;
     margin-bottom: 10%;
@@ -278,12 +365,13 @@ header {
     display: flex;
     background-color: #F6F9FF;
     width: 70%;
+    height: 300px;
     margin: 100px 0px;
 }
 
 .producto-izq__imagen img{
-    width: 330px;
-    height: 100%;
+    width: auto;
+    height: 300px;
 }
 
 .producto-izq__details {
@@ -309,7 +397,7 @@ header {
 }
 
 .producto-izq__boton button {
-    width: 26%;
+    width: 250px;
     border: none;
     padding: 10px 5px;
     border-radius: 5px;
@@ -327,13 +415,14 @@ header {
     display: flex;
     background-color: #F6F9FF;
     width: 70%;
+    height: 300px;
     justify-content: right;
     margin: 100px 0px 100px auto;
 }
 
 .producto-dcha__imagen img{
-    width: 330px;
-    height: 100%;
+    width: auto;
+    height: 300px;
 }
 
 .producto-dcha__details {
@@ -360,7 +449,7 @@ header {
 }
 
 .producto-dcha__boton button {
-    width: 26%;
+    width: 250px;
     border: none;
     padding: 10px 5px;
     border-radius: 5px;
@@ -394,6 +483,55 @@ header {
 .productos-favoritos__boton-ver-todo button:hover {
     opacity: 100%;
 }
+
+@media (max-width: 1620px) {
+    .producto-izq__container {
+        width: 80%;
+    }
+
+    .producto-dcha__container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1620px) {
+    .producto-izq__container {
+        width: 90%;
+    }
+
+    .producto-dcha__container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .producto-izq__container {
+        width: 100%;
+    }
+
+    .producto-dcha__container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .producto-izq__details .producto__titulo {
+        font-size: 1.5em;
+    }
+    
+    .producto-izq__details .producto__precio {
+        font-size: 1.2em;
+    }
+
+    .producto-dcha__details .producto__titulo {
+        font-size: 1.5em;
+    }
+    
+    .producto-dcha__details .producto__precio {
+        font-size: 1.2em;
+    }
+}
+
 
 /* --------- ------ SERVICIOS ------ --------- */
 
@@ -533,6 +671,75 @@ header {
 .servicio__imagen-3 {
     border-radius: 15px;
     overflow: hidden;
+}
+
+@media (max-width: 1620px) {
+    .servicios__atencion-medica img {
+        height: 650px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .servicios__atencion-medica img {
+        width: auto;
+        /* height: ; */
+        margin-left: 0px;
+    }
+
+    .servicios__atencion-medica {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 15px;
+        grid-area: servicios__atencion-medica;
+        width: 100%;
+    }
+
+    .servicios__collage {
+        width: 70%;
+        margin: 100px auto 200px auto;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "servicios__atencion-medica servicios__atencion-medica servicios__atencion-medica"
+                             "servicios__atencion-medica servicios__atencion-medica servicios__atencion-medica"
+                             "servicios_estetica-1 servicios_estetica-1 servicios_estetica-1"
+                             "servicios_estetica-1 servicios_estetica-1 servicios_estetica-1"
+                             "servicios_estetica-2 servicios_estetica-2 servicios_estetica-2"
+                             "servicios_estetica-2 servicios_estetica-2 servicios_estetica-2";
+    }
+}
+
+@media (max-width: 900px) {
+    .servicios__atencion-medica img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .servicios_estetica-1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-top: 0px;
+    }
+
+    .servicios_estetica-2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-top: 0px;
+    }
+
+    .servicios_estetica-2 {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        grid-area: servicios_estetica-2;
+        width: 100%;
+        border-radius: 15px;
+    }
+    
 }
 
 /* --------- ------ UBICACION ------ --------- */
