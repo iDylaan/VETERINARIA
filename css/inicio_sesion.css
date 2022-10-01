@@ -1,7 +1,15 @@
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 body{
     margin: 0%;
     padding: 0;
     height: 100vh;
+    background: linear-gradient(150deg, #00ff62,#0077ff);
     background: linear-gradient(150deg, #FF8686,#396472, #74FF8A);
     position: relative;
     font-family: 'Rubik', sans-serif;
