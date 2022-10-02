@@ -934,10 +934,12 @@ header {
 }
 
 .valores__details {
-    list-style-position: inside;
+    list-style-position: outside;
     color: var(--white);
     padding: 40px 50px;
     text-align: justify;
+    position: relative;
+    width: inherit;
 }
 
 .valores__details ol {
@@ -952,15 +954,117 @@ header {
 }
 
 .valores__imagen {
-    width: 100%;
+    width: 1000px;
+    position: absolute;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .valores__imagen img {
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    position: absolute;
+    top: -40%;
     width: 100%;
-    height: 500px;
     object-fit: cover;
+}
+
+#valores-img-mobile {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media (max-width: 1700px) {
+    .valores__imagen img {
+        top: -20%;
+    }
+}
+
+@media (max-width: 1480px) {
+    .valores__imagen img {
+        top: -10%;
+    }
+}
+
+@media (max-width: 1430px) {
+    .valores__imagen img {
+        top: 0%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .quienes-somos__valores-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        background-color: #002632;
+        margin: 50px 0px 200px 0px;
+        border-radius: 20px;
+        /* border: 1px solid greenyellow; */
+    }
+
+    .valores__imagen {
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+        width: inherit;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        /* border: 1px solid red; */
+    }
+
+    .valores__imagen img{
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    #valores-img-mobile {
+        position: absolute;
+        visibility: visible;
+        width: 100%;
+        object-fit: cover;
+        top: -50%;
+    }
+}
+
+@media (max-width: 1020px) {
+    #valores-img-mobile {
+        top: -30%;
+    }
+}
+
+@media (max-width: 800px) {
+    #valores-img-mobile {
+        top: -30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .quienes-somos__container {
+        width: 90%;
+        margin: auto;
+    }
+
+    #valores-img-mobile {
+        top: -10%;
+    }
+}
+
+@media (max-width: 550px) {
+    .quienes-somos__container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .valores__imagen {
+        height: 300px;
+    }
 }
 
 /* --------- ------ FOOTER ------ --------- */
@@ -1002,4 +1106,11 @@ footer{
 .politicas a{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
