@@ -107,7 +107,7 @@ form input {
     text-decoration: underline;
 }
 
-input[type="submit"]{
+.formulario button{
     width: 100%;
     height: 50px;
     border: 1px solid;
