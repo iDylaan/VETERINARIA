@@ -13,3 +13,37 @@ header{
     height: 50px;
     background-color: #B2FF51;
 }
+
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+}
+
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+}
+
+.barra-nav{
+    width: 80%;
+    height: inherit;  /*retoma lo ancho que tiene su padre*/
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+
+.quienes-somos{
+    width: 20%;
+    border: 1px solid red;
+}
