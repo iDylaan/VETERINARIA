@@ -16,12 +16,15 @@
 
     --atencion-medica-bg-categoria: rgb(253, 167, 167);
     --atencion-medica-letras-categoria: rgb(98, 64, 64);
+
+    --bg-oscuro: #002632;
 }
 
 body {
     font-family: 'Rubik', sans-serif;
     background-image: url('../imagenes/petsbg.png');
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 /* --------- ------ HEADER ------ --------- */
@@ -65,8 +68,13 @@ header {
     align-items: center;
 }   
 
+.header__nav-desktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .abajo {
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     width: 100%;
     height: 50px;
 }
@@ -254,6 +262,56 @@ header {
 
     #carouselExampleControls {
         width: 85%;
+    }
+}
+
+@media (max-width: 1080px) {    
+    .header__nav-desktop {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .header__nav-mobile {
+        width: 0px;
+        margin-right: 0;
+    }
+
+    .bars__menu {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20%;
+        left: 87%;
+        opacity: 80%;
+        cursor: pointer;
+        transition: 0.275s;
+    }
+    
+    .active-bars__menu {
+        transition: 0.275s;
+        opacity: 100%;
+    }
+    
+    .bars-abajo {
+        top: 0%;
+    }
+
+    .bars__menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--white);
+        margin-top: 9px;
+    }
+
+    .line1__bars-menu {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    
+    .line3__bars-menu {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
     }
 }
 
@@ -755,7 +813,7 @@ header {
 
 .ubicacion__details {
     color: var(--white);
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     display: flex;
     justify-content: space-between;
 }
@@ -858,7 +916,7 @@ header {
 
 .quienes-somos__descripcion {
     width: 100%;
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     color: var(--white);
     display: flex;
     margin: auto;
@@ -886,7 +944,7 @@ header {
 }
 
 .quienes-somos__mision {
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     border-radius: 20px;
     padding: 40px 50px;
     color: var(--white);
@@ -905,7 +963,7 @@ header {
 }
 
 .quienes-somos_vision {
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     border-radius: 20px;
     padding: 40px 50px;
     color: var(--white);
@@ -928,7 +986,7 @@ header {
     justify-content: space-between;
     margin: auto;
     width: 100%;
-    background-color: #002632;
+    background-color: var(--bg-oscuro);
     margin: 50px 0px 200px 0px;
     border-radius: 20px;
 }

@@ -6,11 +6,14 @@ const btnInstagram = document.querySelector('#btnInstagram');
 const btnUbicacionHeader = document.querySelector('#nav-ubicacion');
 const btnHome = document.querySelector('#nav-home');
 const btnLogo = document.querySelector('.header__logo');
-
+var bars = document.querySelector('.bars__menu');
 
 // Event Listeners
 eventListeners();
 function eventListeners() {
+    // Header responsivo
+    bars.addEventListener('click', () => bars.classList.toggle('active-bars__menu'));
+
     // Redirecciones
     btnIniciarSesion.addEventListener('click', () => window.location.href = '../paginas/inicio_sesion.html' );
     btnQuienesSomos.addEventListener('click', () => window.scrollTo(0, 4900) );
@@ -28,4 +31,5 @@ function eventListeners() {
 function adaptarHeader() {
     const header = document.querySelector('.header__nav-container');
     header.classList.toggle("abajo", window.scrollY > 0);
+    bars.classList.toggle("bars-abajo", window.scrollY > 0);
 }
