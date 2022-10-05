@@ -79,6 +79,16 @@ header {
     height: 50px;
 }
 
+.invisible {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: relative;
+    visibility: visible;
+}
+
 #logo {
     width: 80%;
     height: 35px;
