@@ -1,29 +1,37 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-header{
+header {
     width: 100%;
     height: 50px;
-    background-color: #B2FF51;
+    background-color: #c9ff86;
 }
 
 #logo {
     width: 80%;
     height: 35px;
+    margin-right: 6px;
+    margin-top: 4px;
 }
 
 .header__logo {
-    /* border: 1px solid red; */
+    /* border: 1px solid blue; */
     display: flex;
     text-transform: uppercase;
-    float: left;
     cursor: pointer;
 }
 
@@ -31,23 +39,73 @@ header{
     display: flex;
     text-transform: uppercase;
     font-size: 1.6em;
-    font-family: 'Josefin Sans', sans-serif;
     align-items: center;
     color: var(--white);
 }
 
-.barra-nav{
+.nav__container {
     width: 80%;
-    height: inherit;  /*retoma lo ancho que tiene su padre*/
-    /*border: 1px solid red;*/
+    height: inherit;
+    /*retoma lo ancho que tiene su padre*/
+    /* border: 1px solid purple; */
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-.quien-somos{
-    cursor: pointer;
-    width: 12%;
-    height: 50%;
-    border: 1px solid red;
-    margin: auto;
+.nav__opciones {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
 
+.nav__opciones-mobil {
+    visibility: hidden;
+    position: absolute;
+}
+
+.nav__opciones-mobil-activo {
+    font-size: 2rem;
+    opacity: 100%;
+    /* color: red; */
+}
+
+.nav__opciones a {
+    /* border: 1px solid red; */
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 75%;
+}
+
+.nav__opciones a:hover {
+    opacity: 100%;
+}
+
+/* QUERY */
+/* MEDIA QUERIES */
+@media (max-width: 1210px) {
+    .nav__opciones {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .nav__opciones-mobil {
+        visibility: visible;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__opciones-mobil i {
+        font-size: 2rem;
+        color: black;
+        opacity: 75%;
+        cursor: pointer;
+    }
+    
 }
