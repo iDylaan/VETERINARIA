@@ -53,3 +53,46 @@
     color: var(--blue);
 }
 
+.header__logo span {
+    font-size: 1.3em;
+    color: var(--blue);
+}
+.header__navegador-central {
+    text-align: center;
+}
+
+.navegeador-lateral {
+    text-align: right;
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--blue);
+    opacity: 100%;
+}
+.header__logo h1 {
+    visibility: hidden;
+    position: absolute;
+ }
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: inline;
+    cursor: pointer;
+}    
+
+#logo {
+    width: 50px;
+    height: auto;
+}
