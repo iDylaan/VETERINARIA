@@ -66,7 +66,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border: 1px solid yellow; */
+
 }   
+.navegador__container {
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
 
 .header__nav-desktop {
     display: flex;
@@ -85,7 +93,7 @@ header {
 }
 
 .header__logo {
-    /* border: 1px solid red; */
+    /* border: 1px solid yellowgreen; */
     display: flex;
     text-transform: uppercase;
     float: left;
@@ -108,10 +116,13 @@ header {
 
 .header__navegador-central {
     text-align: center;
+    /* border: 1px solid #FF7E7E; */
 }
 
 .navegeador-lateral {
     text-align: right;
+    /* border: 1px solid #55D6FF; */
+
 }
 
 .header__nav-link {
