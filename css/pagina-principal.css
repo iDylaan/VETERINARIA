@@ -41,6 +41,10 @@ header {
     height: 400px;
 }
 
+.header-nav-mobil {
+    visibility: hidden;
+}
+
 .header__container {
     /* border: 1px solid white; */
     position: relative;
@@ -275,12 +279,14 @@ header {
     }
 }
 
-@media (max-width: 1080px) {    
+@media (max-width: 1080px) {   
+    /* ESCONDER EL HEADER DE ESCRITORIO */
     .header__nav-desktop {
         visibility: hidden;
         position: absolute;
     }
-
+    
+    /* GENERACIÓN DEL BOTÓN */
     .header__nav-mobile {
         width: 0px;
         margin-right: 0;
@@ -322,6 +328,23 @@ header {
     .line3__bars-menu {
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
+    }
+
+    /* MENU DESPLEGABLE PARA MOBILES */
+    .header-nav-mobil {
+        visibility: visible;
+    }
+    
+
+    .header-nav-mobil__container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--bg-oscuro);
+        width: 270px;
+        height: 100vh;
+        z-index: 10;
+        padding: 40px;
     }
 }
 
