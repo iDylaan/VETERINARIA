@@ -18,7 +18,7 @@ body {
 header {
     width: 100%;
     height: 50px;
-    background-color: #c9ff86;
+    background-color: #B2FF51;
 }
 
 #logo {
@@ -108,4 +108,15 @@ header {
         cursor: pointer;
     }
     
+}
+
+.imagen-prod{
+    display: flex;
+    
+}
+
+.titulo-prod{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start ;
 }
