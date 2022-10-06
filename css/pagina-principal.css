@@ -972,6 +972,21 @@ header {
     opacity: 85%;
 }
 
+@media (max-width: 1200px) {
+    .ubicacion__details {
+        flex-direction: column;
+    }
+
+    .ubicacion-map {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .ubicacion__info-container {
+        height: 520px;
+    }
+}
+
 /* --------- ------ QUIENES SOMOS ------ --------- */
 
 .quienes-somos__container {
