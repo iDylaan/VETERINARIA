@@ -61,7 +61,7 @@ header {
     /* border: 1px solid red; */
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     height: 80px;
 }
 
@@ -148,7 +148,7 @@ header {
 .categorias__container {
     /* border: 1px solid red; */
     width: 70%;
-    margin: 140px auto 0px auto;
+    margin: 100px auto 0px auto;
     display: flex;
     justify-content: space-around;
     color: var(--white);
@@ -210,6 +210,11 @@ header {
     overflow: hidden;
 }
 
+.back-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
 @media (max-width: 1500px) {
     .categorias__estetica,
     .categorias__productos,
@@ -249,7 +254,6 @@ header {
     .categorias__productos,
     .categorias__atencion-medica {
         font-size: 1.5em;
-        margin: 10px auto 0px auto;
         width: 80%;
         text-align: center;
         display: flex;
@@ -264,7 +268,7 @@ header {
 
     .categorias__container {
         /* border: 1px solid red; */
-        margin: 50px 0 0 0;
+        margin: 38px 0 0 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -280,10 +284,22 @@ header {
 }
 
 @media (max-width: 1080px) {   
+
+    .categorias__container {
+        /* border: 1px solid red; */
+        margin: 100px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
+    }
+
     /* ESCONDER EL HEADER DE ESCRITORIO */
     .header__nav-desktop {
-        visibility: hidden;
-        position: absolute;
+        display: none;
     }
     
     /* GENERACIÓN DEL BOTÓN */
@@ -333,18 +349,40 @@ header {
     /* MENU DESPLEGABLE PARA MOBILES */
     .header-nav-mobil {
         visibility: visible;
+        position: relative;
     }
     
 
     .header-nav-mobil__container {
         position: fixed;
         top: 0;
-        right: 0;
+        right: -270px;
         background-color: var(--bg-oscuro);
         width: 270px;
         height: 100vh;
         z-index: 10;
         padding: 40px;
+    }
+
+    .nav-mobile__logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-mobile__main-options {
+        margin-bottom: 30px;
+    }
+
+    #back-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        z-index: -1;
+        background-color: #00161d;
+        display: none;
     }
 }
 
