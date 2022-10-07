@@ -8,69 +8,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../css/pagina-principal.css">
+    <link rel="stylesheet" href="../css/citas.css">
 
     <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
     <script src="./js/index.js" defer></script>
     <script src="./js/jquery-3.6.1.min.js" defer></script>
-
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
   </head>
-  <body>
-    <div class="header__nav-container">
-      <div class="header__nav">
-          <div class="header__logo">
-              <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
-              <h1><span>v</span>eterinaria</h1>
-          </div>
-          <div class="header__navegador-central">
-              <p class="header__nav-link" id="nav-home"><i class="fa-solid fa-house"></i> Home</p>
-              <p class="header__nav-link" id="nav-quienes-somos">¿Quiénes somos?</p>
-              <p class="header__nav-link" id="nav-pedidos">Pedidos</p>
-              <p class="header__nav-link" id="nav-ubicacion">Ubicación</p>
-          </div>
-
-          <div class="navegeador-lateral">
-              <p class="header__nav-link" id="nav-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito
-              </p>
-              <p class="header__nav-link" id="nav-login"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
-          </div>
-      </div>
-      </div>
-      <br><br>
-      <br>
-     <center>
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Nombre dela Mascota</label>
-              </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">Hora</i>
-                <input id="icon_telephone" type="time" class="validate">
-                <label for="icon_telephone">Hora</label>
-              </div>
-              <div class="input-field col s2">
-                <i class="material-icons prefix">Día</i>
-                <input id="icon_telephone" type="date" class="validate">
-                <label for="icon_telephone">Día</label>
-              </div>
-              <div class="input-field col s2">
-                <i class="material-icons prefix">Consultorio</i>
-                <input id="icon_telephone" type="number" class="validate">
-                <label for="icon_telephone">Consultorio</label>
-              </div>
-              
-            </div>
-          </form>
+  <header>
+    <div class="header_container">
+      <div class="header__nav-container">
+        <div class="header__logo">
+          <img id="logo" src="../imagenes/logo.png" alt="Logo veterinaria">
+          <h1 style="color:white;"><span>V</span>eterinaria</h1>
         </div>
-     </center>
+        <div style="color: white;" class="header__navegador-central">
+          <p class="header__nav-link" id="nav-home"><i class="fa-solid fa-house"></i> Home</p>
+          <p class="header__nav-link" id="nav-quienes-somos">¿Quiénes somos?</p>
+          <p class="header__nav-link" id="nav-pedidos">Pedidos</p>
+          <p class="header__nav-link" id="nav-ubicacion">Ubicación</p>
+      </div>
+      <div style="color: white;" class="navegeador-lateral">
+        <p class="header__nav-link" id="nav-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito
+        </p>
+        <p class="header__nav-link" id="nav-login"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+      </div>
     </div>
+    
+  </header>
+
+  <body> 
+    <div class="container">
+      <div class="citas">
+        <h1 style="color:white ;">REGISTRO PARA AGENDAR CITAS</h1>
+        <form>
+          <table class="tabla">
+            <td>
+              <div class="name">
+                <input type="text" required>
+                <label for="">Nombre del Dueño</label>
+              </div>
+              <td>
+                <div>
+                  <input type="text" required>
+                  <label for="">Nombre de la Mascota</label>
+                </div>
+              </td>
+            </td>
+            <td>
+              <tr>
+                <td>
+                  <div>
+                    <input type="date" required>
+                    <label for="">Día</label>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <input type="text" required>
+                    <label for="">Género</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <input type="time" required>
+                    <label for="">Hora</label>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <input type="text" required>
+                    <label for="">Número de Teléfono </label>
+                  </div>
+                </td>
+              </tr>
+          </table>
+          <input style="color: white;" class="boton" type="button" value="SOLICITAR REGISTRO">
+        </form>
+      </div>
+
+    </div>
+
   </body> 
  </html>
  
