@@ -613,6 +613,11 @@ header {
     opacity: 100%;
 }
 
+.productos__mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
 @media (max-width: 1620px) {
     .producto-izq__container {
         width: 80%;
@@ -661,6 +666,83 @@ header {
     }
 }
 
+@media (max-width: 730px) {
+    
+    .productos__mobile {
+        visibility: visible;
+        position: relative;
+    }
+    
+    .productos__desktop {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .producto__container {
+        display: flex;
+        background-color: #F6F9FF;
+        width: 100%;
+        height: 570px;
+        margin: 100px 0px;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
+
+    .producto__imagen img{
+        width: 60%;
+        height: inherit;
+    }
+
+    .producto__boton button {
+        width: 250px;
+        border: none;
+        padding: 7px 5px;
+        border-radius: 5px;
+        font-size: 1.3em;
+        color: var(--white);
+        opacity: 80%;
+        background-color: #00B1E9;
+    }
+
+    .producto__details {
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    
+    .producto__precio {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .producto__boton button:hover {
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .producto__imagen img{
+        width: 80%;
+        height: inherit;
+    }
+}
+
+@media (max-width: 400px) {
+    .producto__imagen img{
+        width: 100%;
+        height: inherit;
+    }
+}
 
 /* --------- ------ SERVICIOS ------ --------- */
 

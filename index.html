@@ -132,47 +132,93 @@
     <div class="productos-favoritos__container">
         <h1>Estos son los productos favoritos de nuestros clientes 🦮</h1>
 
-        <div class="producto-izq__container">
-            <div class="producto-izq__imagen">
-                <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
-            </div>
-
-            <div class="producto-izq__details">
-                <div>
-                    <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
-                    <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
-                    </p>
+        <section class="productos__desktop">
+            <div class="producto-izq__container">
+                <div class="producto-izq__imagen">
+                    <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
                 </div>
+    
+                <div class="producto-izq__details">
+                    <div>
+                        <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
+                        <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+    
+                    <div class="producto-izq__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div> <!-- Producto izquierdo -->
+    
+            <div class="producto-dcha__container">
+    
+                <div class="producto-dcha__details">
+                    <div>
+                        <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
+                        </p>
+                        <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+                    <div class="producto-dcha__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="producto-dcha__imagen">
+                    <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
+                </div>
+    
+            </div> <!-- Producto derecho -->
+        </section>
 
-                <div class="producto-izq__boton">
-                    <button id="agregar-al-carrito">
-                        Agregar al carrito
-                    </button>
+        <section class="productos__mobile">
+            <div class="producto__container">
+                <div class="producto__imagen">
+                    <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
+                </div>
+    
+                <div class="producto__details">
+                    <div>
+                        <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
+                        <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+    
+                    <div class="producto__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div> <!-- Producto izquierdo -->
+    
+            <div class="producto__container">
 
-        <div class="producto-dcha__container">
-
-            <div class="producto-dcha__details">
-                <div>
-                    <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
-                    </p>
-                    <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
-                    </p>
+                <div class="producto__imagen">
+                    <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
                 </div>
-                <div class="producto-dcha__boton">
-                    <button id="agregar-al-carrito">
-                        Agregar al carrito
-                    </button>
+    
+                <div class="producto__details">
+                    <div>
+                        <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
+                        </p>
+                        <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+                    <div class="producto__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="producto-dcha__imagen">
-                <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
-            </div>
-
-        </div> <!-- Producto derecho -->
+    
+            </div> <!-- Producto derecho -->
+        </section>
 
         <div class="productos-favoritos__boton-ver-todo">
             <button id="btn-ver-todo">Ver todo</button>
