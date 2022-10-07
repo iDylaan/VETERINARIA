@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header__container {
+    /* border: 1px solid white; */
+    position: relative;
+    height: 500px;
+    margin: auto;
+}
+
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+}
+
+.header__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+}
+
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--blue);
+}
+
+.header__logo span {
+    font-size: 1.3em;
+    color: var(--blue);
+}
+.header__navegador-central {
+    text-align: center;
+}
+
+.navegeador-lateral {
+    text-align: right;
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--blue);
+    opacity: 100%;
+}
+.header__logo h1 {
+    visibility: hidden;
+    position: absolute;
+ }
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: inline;
+    cursor: pointer;
+}    
+
+#logo {
+    width: 50px;
+    height: auto;
+}
