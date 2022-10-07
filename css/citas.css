@@ -1,0 +1,101 @@
+body {
+    background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
+  }
+  .nav{
+    margin: auto;
+  }
+  header {
+    /* border: 1px solid red; */
+    background-size: cover;
+    background-position: -500px -300px;
+    background-attachment: fixed;
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+}
+  .header__container {
+    /* border: 1px solid white; */
+    position: relative;
+    height: 500px;
+    margin: auto;
+    position: fixed;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.header__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+}
+#logo {
+    width: 80%;
+    height: 35px;
+}
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+}
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+}
+.header__navegador-central {
+    text-align: center;
+}
+.navegeador-lateral {
+    text-align: right;
+}
+.citas{
+    background-color: rgba(23, 4, 78, 1);
+    align-content: center;
+    border-width: 80px;
+    padding: 40px 50px;
+}
+.container {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+.citas{
+   margin-left: 60px;
+   margin-right: 60px;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background: rgba(23, 4, 78, 1);
+    border-radius: 10px;
+}
+.tabla{
+    color: white;
+
+}
+.boton{
+    border-radius: 20;
+    background-color: rgba(23, 4, 78, 1);
+    border-color: white;
+}
