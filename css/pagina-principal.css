@@ -977,7 +977,6 @@ header {
     height: 100%;
     margin: 0;
 }
-
 .ubicacion__info-container {
     display: flex;
     flex-direction: column;
@@ -1069,6 +1068,26 @@ header {
     .ubicacion__info-container {
         height: 520px;
     }
+}
+
+@media (max-width: 820px) {
+    .ubicacion-map iframe {
+        width: 600px;
+        height: 600px;
+    }    
+}
+
+@media (max-width: 620px) {
+    .ubicacion-map iframe {
+        width: 400px;
+        height: 400px;
+    }    
+}
+@media (max-width: 400px) {
+    .ubicacion-map iframe {
+        width: 350px;
+        height: 350px;
+    }    
 }
 
 /* --------- ------ QUIENES SOMOS ------ --------- */
