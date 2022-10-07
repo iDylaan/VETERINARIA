@@ -33,12 +33,16 @@ header {
     /* border: 1px solid red; */
     background-image: url('../imagenes/bg-header.jpg');
     background-size: cover;
-    background-position: -500px -300px;
     background-attachment: fixed;
+    background-position: -500px;
     padding-top: 20px;
     margin: auto;
     width: 100%;
-    height: 400px;
+    height: 450px;
+}
+
+.header-nav-mobil {
+    visibility: hidden;
 }
 
 .header__container {
@@ -57,7 +61,7 @@ header {
     /* border: 1px solid red; */
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     height: 80px;
 }
 
@@ -85,6 +89,18 @@ header {
     background-color: var(--bg-oscuro);
     width: 100%;
     height: 50px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: relative;
+    visibility: visible;
 }
 
 #logo {
@@ -145,7 +161,7 @@ header {
 .categorias__container {
     /* border: 1px solid red; */
     width: 70%;
-    margin: 140px auto 0px auto;
+    margin: 100px auto 0px auto;
     display: flex;
     justify-content: space-around;
     color: var(--white);
@@ -207,6 +223,11 @@ header {
     overflow: hidden;
 }
 
+.back-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
 @media (max-width: 1500px) {
     .categorias__estetica,
     .categorias__productos,
@@ -246,7 +267,6 @@ header {
     .categorias__productos,
     .categorias__atencion-medica {
         font-size: 1.5em;
-        margin: 10px auto 0px auto;
         width: 80%;
         text-align: center;
         display: flex;
@@ -261,7 +281,7 @@ header {
 
     .categorias__container {
         /* border: 1px solid red; */
-        margin: 50px 0 0 0;
+        margin: 38px 0 0 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -276,12 +296,26 @@ header {
     }
 }
 
-@media (max-width: 1080px) {    
-    .header__nav-desktop {
-        visibility: hidden;
-        position: absolute;
+@media (max-width: 1080px) {   
+
+    .categorias__container {
+        /* border: 1px solid red; */
+        margin: 100px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
     }
 
+    /* ESCONDER EL HEADER DE ESCRITORIO */
+    .header__nav-desktop {
+        display: none;
+    }
+    
+    /* GENERACIÓN DEL BOTÓN */
     .header__nav-mobile {
         width: 0px;
         margin-right: 0;
@@ -323,6 +357,45 @@ header {
     .line3__bars-menu {
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
+    }
+
+    /* MENU DESPLEGABLE PARA MOBILES */
+    .header-nav-mobil {
+        visibility: visible;
+        position: relative;
+    }
+    
+
+    .header-nav-mobil__container {
+        position: fixed;
+        top: 0;
+        right: -270px;
+        background-color: var(--bg-oscuro);
+        width: 270px;
+        height: 100vh;
+        z-index: 10;
+        padding: 40px;
+    }
+
+    .nav-mobile__logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-mobile__main-options {
+        margin-bottom: 30px;
+    }
+
+    #back-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        z-index: -1;
+        background-color: #00161d;
+        display: none;
     }
 }
 
@@ -553,6 +626,11 @@ header {
     opacity: 100%;
 }
 
+.productos__mobile {
+    visibility: hidden;
+    position: absolute;
+}
+
 @media (max-width: 1620px) {
     .producto-izq__container {
         width: 80%;
@@ -601,6 +679,83 @@ header {
     }
 }
 
+@media (max-width: 730px) {
+    
+    .productos__mobile {
+        visibility: visible;
+        position: relative;
+    }
+    
+    .productos__desktop {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .producto__container {
+        display: flex;
+        background-color: #F6F9FF;
+        width: 100%;
+        height: inherit;
+        margin: 100px 0px;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        text-align: center;
+    }
+
+    .producto__imagen img{
+        width: 60%;
+        height: inherit;
+    }
+
+    .producto__boton button {
+        width: 250px;
+        border: none;
+        padding: 7px 5px;
+        border-radius: 5px;
+        font-size: 1.3em;
+        color: var(--white);
+        opacity: 80%;
+        background-color: #00B1E9;
+    }
+
+    .producto__details {
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .producto__titulo {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    
+    .producto__precio {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .producto__boton button:hover {
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .producto__imagen img{
+        width: 80%;
+        height: inherit;
+    }
+}
+
+@media (max-width: 400px) {
+    .producto__imagen img{
+        width: 100%;
+        height: inherit;
+    }
+}
 
 /* --------- ------ SERVICIOS ------ --------- */
 
@@ -912,6 +1067,21 @@ header {
     opacity: 85%;
 }
 
+@media (max-width: 1200px) {
+    .ubicacion__details {
+        flex-direction: column;
+    }
+
+    .ubicacion-map {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .ubicacion__info-container {
+        height: 520px;
+    }
+}
+
 /* --------- ------ QUIENES SOMOS ------ --------- */
 
 .quienes-somos__container {
@@ -938,14 +1108,17 @@ header {
 .quienes-somos__info {
     padding: 40px 50px;
     font-size: 1.5em;
+    display: grid;    
 }
 
 .quienes-somos__info > p {
     text-align: justify;
 }
 
-.quienes-somos__logo img {
-    width: 200px;
+.quienes-somos__info img {
+    width: 128px;
+    height: 128px;
+    margin: 0px auto 30px auto;
 }
 
 .mision-vision__container {
@@ -1100,6 +1273,11 @@ header {
 }
 
 @media (max-width: 1020px) {
+    .mision-vision__container {
+        display: flex;
+        flex-direction: column;
+    }
+
     #valores-img-mobile {
         top: -30%;
     }
