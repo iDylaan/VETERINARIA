@@ -73,6 +73,7 @@ header {
     /* border: 1px solid yellow; */
 
 }   
+
 .navegador__container {
     width: inherit;
     display: flex;
@@ -319,6 +320,8 @@ header {
     .header__nav-mobile {
         width: 0px;
         margin-right: 0;
+        visibility: hidden;
+        position: absolute;
     }
 
     .bars__menu {
