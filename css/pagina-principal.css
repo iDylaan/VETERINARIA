@@ -81,6 +81,8 @@ header {
     background-color: var(--bg-oscuro);
     width: 100%;
     height: 50px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
 .invisible {
@@ -682,7 +684,7 @@ header {
         display: flex;
         background-color: #F6F9FF;
         width: 100%;
-        height: 570px;
+        height: inherit;
         margin: 100px 0px;
         flex-direction: column;
         position: relative;
@@ -730,7 +732,7 @@ header {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .producto__imagen img{
         width: 80%;
         height: inherit;
@@ -1095,14 +1097,17 @@ header {
 .quienes-somos__info {
     padding: 40px 50px;
     font-size: 1.5em;
+    display: grid;    
 }
 
 .quienes-somos__info > p {
     text-align: justify;
 }
 
-.quienes-somos__logo img {
-    width: 200px;
+.quienes-somos__info img {
+    width: 128px;
+    height: 128px;
+    margin: 0px auto 30px auto;
 }
 
 .mision-vision__container {
@@ -1257,6 +1262,11 @@ header {
 }
 
 @media (max-width: 1020px) {
+    .mision-vision__container {
+        display: flex;
+        flex-direction: column;
+    }
+
     #valores-img-mobile {
         top: -30%;
     }
