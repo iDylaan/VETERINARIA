@@ -111,7 +111,13 @@ header {
 }
 
 .imagen-prod{
-    display: flex;
+    margin: auto;
+    display: block;
+    padding: 70px;
+    margin-right: auto;;
+    margin-left: auto;
+    border-style: solid;
+    float: left ;
     
 }
 
@@ -119,4 +125,45 @@ header {
     display: flex;
     justify-content: center;
     align-items:flex-start ;
+    font-size: 27px;
+    text-align: center;
+}
+
+.imagen-prod:hover{
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.titulo-prod{
+    float:inline-start;
+    margin: auto;
+    border-style: solid;
+    padding: 50px;
+}
+
+.precio{
+    border-style: solid;
+    float: left;
+    margin: 3px;
+    width: 12%;
+    font-size: 17px;
+
+}
+
+.numero{
+    color: red;
+    font-size: 17px;
+}
+
+.peso{
+    border-style: solid;
+    float: left;
+    font-size: 23px;
+}
+
+.brebe-descripcion{
+    border-style: solid;
+    margin: auto;
+    width: 42%;
+    text-align: left;
 }
