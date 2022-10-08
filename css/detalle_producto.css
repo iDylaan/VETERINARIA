@@ -110,61 +110,81 @@ header {
     
 }
 
+/*     CONTENIDO PRINCIPAL        */
+
+.contenido-principal__container {
+    width: 80%;
+    margin: auto;
+    border: 5px solid red;
+    display: flex;
+}
+
 .imagen-prod{
     margin: auto;
-    display: block;
     padding: 70px;
-    margin-right: auto;;
-    margin-left: auto;
-    border-style: solid;
-    float: left ;
-    
-}
-
-.titulo-prod{
-    display: flex;
-    justify-content: center;
-    align-items:flex-start ;
-    font-size: 27px;
-    text-align: center;
-}
-
-.imagen-prod:hover{
-    transform: scale(0.9);
-    transition: all 0.3s ease;
-}
-
-.titulo-prod{
-    float:inline-start;
     margin: auto;
-    border-style: solid;
-    padding: 50px;
+    /* border: 5px solid rgb(0, 162, 255); */
+}
+
+/* .imagen-prod:hover{
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+} */
+
+.detalles-contenido-principal {
+    width: 100%;
+    /* border: 5px solid blue; */
+}
+
+.titulo-prod {
+    /* border: 5px solid yellow; */
+    text-align: left;
+    font-size: 27px;
+    margin-top: 70px;
 }
 
 .precio{
-    border-style: solid;
-    float: left;
-    margin: 3px;
-    width: 12%;
-    font-size: 17px;
-
+    margin-top: 5vh;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .numero{
     color: red;
-    font-size: 17px;
+    font-size: 1.2rem;
 }
 
-.peso{
-    border-style: solid;
-    
-    font-size: 23px;
-
+.peso {
+    margin-top: 5vh;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(222, 222, 222);
+    width: 170px;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
-.brebe-descripcion{
-    border-style: solid;
-    margin: auto;
-    width: 42%;
+.breve-descripcion {
+    margin-top: 5vh;
     text-align: left;
+    font-size: 1.2rem;
+}
+
+.boton-de-carrito button{
+    margin-top: 5vh;
+    border: none;
+    background-color: rgb(94, 94, 254);
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    opacity: 75%;
+    transition: all 0.2s ease;
+}
+
+.boton-de-carrito button:hover{
+    opacity: 100%;
+    transition: all 0.2s ease;
 }
