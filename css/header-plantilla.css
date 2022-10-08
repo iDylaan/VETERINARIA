@@ -20,7 +20,15 @@
     --estetica-letras-categoria: var(--pastel-blue-800);    
     --bg-oscuro: hsl(192, 100%, 10%); /* --blue-900 */  
     
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --grey-100: hsl(0, 0%, 90%);
@@ -154,12 +162,15 @@ body {
 /* --------- ------ HEADER ------ --------- */
 
 header {
-    background: var(--blue-400);
-    background: linear-gradient(156deg, var(--blue-400) 45%, var(--red-250) 45%);
+    /* border: 1px solid red; */
+    background-image: url('../imagenes/bg-header.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -500px;
     padding-top: 20px;
     margin: auto;
     width: 100%;
-    height: 80px;
+    height: 450px;
 }
 
 .header-nav-mobil {
@@ -235,12 +246,12 @@ header {
     font-size: 1.6em;
     font-family: 'Josefin Sans', sans-serif;
     align-items: center;
-    color: var(--black);
+    color: var(--white);
 }
 
 .header__logo span {
     font-size: 1.3em;
-    color: var(--black);
+    color: var(--white);
 }
 
 .header__navegador-central {
@@ -253,7 +264,7 @@ header {
 
 .header__nav-link {
     cursor: pointer;
-    color: var(--black);
+    color: var(--white);
     font-size: 1.1em;
     font-weight: 400;
     margin: 5px 20px;
@@ -264,6 +275,7 @@ header {
 
 .header__nav-link:hover {
     /* color:rgb(52, 52, 52); */
+    color: var(--white);
     opacity: 100%;
 }
 
@@ -317,7 +329,6 @@ header {
     .active-bars__menu {
         transition: 0.275s;
         opacity: 100%;
-        color: var(--white);
     }
     
     .bars-abajo {
@@ -328,7 +339,7 @@ header {
         display: block;
         width: 100%;
         height: 4px;
-        background-color: var(--black);
+        background-color: var(--white);
         margin-top: 9px;
     }
 
@@ -353,28 +364,20 @@ header {
         position: fixed;
         top: 0;
         right: -270px;
-        background-color: var(--red-250);
+        background-color: var(--bg-oscuro);
         width: 270px;
         height: 100vh;
-        z-index: 2;
+        z-index: 10;
         padding: 40px;
     }
-    
+
     .nav-mobile__logo {
         text-align: center;
         margin-bottom: 20px;
     }
-    
+
     .nav-mobile__main-options {
         margin-bottom: 30px;
-    }
-    
-    .nav-mobile__main-options p {
-        color: var(--white);
-    }
-    
-    .nav-mobile__secondary-options p {
-        color: var(--white);
     }
 
     #back-menu {
@@ -385,46 +388,7 @@ header {
         height: 100vh;
         opacity: 0.5;
         z-index: 1;
-        background-color: var(--grey-900);
+        background-color: #00161d;
         display: none;
     }
-}
-
-
-/* --------- ----- AGENDA DE CITAS CONTENIDO ----- --------- */
-
-.agenda__container {
-    width: 80%;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 6px 68px -4px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #F6F6F6;
-}
-
-.citas__container{
-    margin: 20px 50px;
-}
-
-.titulo-agenda {
-    background: #EFEFEF;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.cita__container {
-    border: 1px solid blueviolet;
-    display: flex;
-}
-
-.cita__detalles {
-    border: 1px solid red;
-}
-
-.cita__descripcion {
-    border: 1px solid red;
 }
