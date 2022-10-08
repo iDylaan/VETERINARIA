@@ -349,7 +349,7 @@ header {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
     .categorias__estetica,
     .categorias__productos,
     .categorias__atencion-medica {
@@ -374,8 +374,6 @@ header {
 }
 
 @media (max-width: 1140px) {
-    /* BOTON RESPONSIVE PARA MOBILES */
-    
     .categorias__estetica,
     .categorias__productos,
     .categorias__atencion-medica {
@@ -409,20 +407,7 @@ header {
     }
 }
 
-@media (max-width: 1080px) {   
-
-    .categorias__container {
-        /* border: 1px solid red; */
-        margin: 100px 0 0 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: var(--white);
-        justify-content: center;
-
-    }
-
+@media (max-width: 1240px) {
     /* ESCONDER EL HEADER DE ESCRITORIO */
     .header__nav-desktop {
         display: none;
@@ -433,7 +418,7 @@ header {
         width: 0px;
         margin-right: 0;
     }
-
+    
     .bars__menu {
         width: 40px;
         height: 40px;
@@ -453,7 +438,7 @@ header {
     .bars-abajo {
         top: 0%;
     }
-
+    
     .bars__menu span {
         display: block;
         width: 100%;
@@ -461,7 +446,7 @@ header {
         background-color: var(--white);
         margin-top: 9px;
     }
-
+    
     .line1__bars-menu {
         border-top-left-radius: 2px;
         border-top-right-radius: 2px;
@@ -471,14 +456,14 @@ header {
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
     }
-
+    
     /* MENU DESPLEGABLE PARA MOBILES */
     .header-nav-mobil {
         visibility: visible;
         position: relative;
     }
     
-
+    
     .header-nav-mobil__container {
         position: fixed;
         top: 0;
@@ -489,16 +474,16 @@ header {
         z-index: 10;
         padding: 40px;
     }
-
+    
     .nav-mobile__logo {
         text-align: center;
         margin-bottom: 20px;
     }
-
+    
     .nav-mobile__main-options {
         margin-bottom: 30px;
     }
-
+    
     #back-menu {
         position: fixed;
         top: 0;
@@ -509,6 +494,21 @@ header {
         z-index: -1;
         background-color: #00161d;
         display: none;
+    }
+} 
+
+@media (max-width: 1080px) {   
+
+    .categorias__container {
+        /* border: 1px solid red; */
+        margin: 100px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
     }
 }
 
