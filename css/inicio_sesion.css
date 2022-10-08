@@ -5,12 +5,12 @@
     }
 }
 
-body{
+body {
     margin: 0%;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(150deg, #00ff62,#0077ff);
-    background: linear-gradient(150deg, #FF8686,#396472, #74FF8A);
+    /* background: rgb(255,134,134); */
+    background: linear-gradient(156deg, rgba(255, 134, 134, 1) 0%, rgba(45, 205, 255, 1) 100%);
     position: relative;
     font-family: 'Rubik', sans-serif;
 }
@@ -22,7 +22,7 @@ body{
     background-repeat: repeat;
 }
 
-.formulario{
+.formulario {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,18 +32,18 @@ body{
     border-radius: 10px;
 }
 
-.formulario h1{
+.formulario h1 {
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid silver;
 }
 
-.formulario form{
+.formulario form {
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-form .username{
+form .username {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
@@ -54,9 +54,12 @@ form input {
     outline: none;
 }
 
-.username inpu{
+form {
+    margin: 40px 0px;
+}
+
+.username input {
     width: 100%;
-    padding: 0 5px;
     height: 40px;
     font-size: 16px;
     border: none;
@@ -64,74 +67,84 @@ form input {
     outline: none;
 }
 
-.username label{
+.username label {
     position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
+    top: 11px;
+    left: 0px;
+    color: hsl(0, 0%, 70%);
     font-size: 16px;
     pointer-events: none;
-    transition: .5s;
+    transition: .3s;
 }
 
-.username span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #6c3483;
-    transition: .5s;
+.label-activo {
+    top: -20px;
 }
 
-.username input:focus ~ label,
-.username input:focus ~ label{
-    top: -5px;
-    color: #6c3483;
+.username-date {
+    color: #adadad;
 }
 
-.username input:focus ~ span::before,
-.username input:focus ~ span::before{
-    width: 100%;
+.username-date input {
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #adadad;
+    margin-top: 10px;
 }
 
-.recordar{
+.recordar {
     margin: -5px 0 20px 5px;
-    color: blue;
+    color: hsl(192, 30%, 70%);
     cursor: pointer;
 }
 
-.recordar:hover{
+.recordar:hover {
     text-decoration: underline;
 }
 
-.formulario button{
+.formulario button {
     width: 100%;
-    height: 50px;
-    border: 1px solid;
-    background: #6c3483;
+    border: none;
+    background: hsl(192, 100%, 40%);
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 1.3rem;
     color: white;
     cursor: pointer;
-    outline: none;
-    margin: 10px auto 10px auto;
+    padding: 10px 15px;
+    /* margin: 10px auto 10px auto; */
+    opacity: 75%;
 }
 
-.registrarse{
+.formulario button:hover {
+    opacity: 100%;
+}
+
+.politicas-privacidad {
+    margin-bottom: 30px;
+}
+
+.politicas-privacidad a {
+    text-decoration: none;
+    color: hsl(192, 30%, 40%);
+}
+
+.politicas-privacidad a:hover {
+    text-decoration: underline;
+}
+
+.registrarse {
     margin: 30px 0;
     text-align: center;
     font-size: 16px;
     color: black;
 }
 
-.registrarse a{
-    color: blue;
+.registrarse a {
+    color: hsl(0, 100%, 80%);
     text-decoration: none;
 }
 
-.registrarse a:hover{
+.registrarse a:hover {
     text-decoration: underline;
 }
