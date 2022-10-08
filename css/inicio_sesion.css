@@ -60,7 +60,6 @@ form {
 
 .username input {
     width: 100%;
-    padding: 0 5px;
     height: 40px;
     font-size: 16px;
     border: none;
@@ -70,13 +69,16 @@ form {
 
 .username label {
     position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
+    top: 11px;
+    left: 0px;
+    color: hsl(0, 0%, 70%);
     font-size: 16px;
     pointer-events: none;
-    transition: .5s;
+    transition: .3s;
+}
+
+.label-activo {
+    top: -20px;
 }
 
 .username-date {
@@ -89,12 +91,6 @@ form {
     padding: 10px 15px;
     color: #adadad;
     margin-top: 10px;
-}
-
-.username input:focus~label,
-.username input:focus~label {
-    top: -5px;
-    color: hsl(192, 30%, 45%);
 }
 
 .recordar {
