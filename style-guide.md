@@ -1,8 +1,7 @@
-# Front-end Style Guide
-
+# Front-end Guia de Estilo
 ## Layout
 
-The designs were created to the following widths:
+El diseño se basa en estos elementos principales
 
 - Mobile: 375px
 - Desktop: 1440px
@@ -35,23 +34,23 @@ The designs were created to the following widths:
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
 
-    -grey-100: hsl(0, 0%, 90%);
-    -grey-150: hsl(0, 0%, 85%);
-    -grey-200: hsl(0, 0%, 80%);
-    -grey-250: hsl(0, 0%, 75%);
-    -grey-300: hsl(0, 0%, 70%);
-    -grey-350: hsl(0, 0%, 65%);
-    -grey-400: hsl(0, 0%, 60%);
-    -grey-450: hsl(0, 0%, 55%);
-    -grey-500: hsl(0, 0%, 50%);
-    -grey-550: hsl(0, 0%, 45%);
-    -grey-600: hsl(0, 0%, 40%);
-    -grey-650: hsl(0, 0%, 35%);
-    -grey-700: hsl(0, 0%, 30%);
-    -grey-750: hsl(0, 0%, 25%);
-    -grey-800: hsl(0, 0%, 20%);
-    -grey-850: hsl(0, 0%, 15%);
-    -grey-900: hsl(0, 0%, 10%);
+    --grey-100: hsl(0, 0%, 90%);
+    --grey-150: hsl(0, 0%, 85%);
+    --grey-200: hsl(0, 0%, 80%);
+    --grey-250: hsl(0, 0%, 75%);
+    --grey-300: hsl(0, 0%, 70%);
+    --grey-350: hsl(0, 0%, 65%);
+    --grey-400: hsl(0, 0%, 60%);
+    --grey-450: hsl(0, 0%, 55%);
+    --grey-500: hsl(0, 0%, 50%);
+    --grey-550: hsl(0, 0%, 45%);
+    --grey-600: hsl(0, 0%, 40%);
+    --grey-650: hsl(0, 0%, 35%);
+    --grey-700: hsl(0, 0%, 30%);
+    --grey-750: hsl(0, 0%, 25%);
+    --grey-800: hsl(0, 0%, 20%);
+    --grey-850: hsl(0, 0%, 15%);
+    --grey-900: hsl(0, 0%, 10%);
 
     --green-100: hsl(120, 100%, 90%);
     --green-150: hsl(120, 100%, 85%);
@@ -166,11 +165,10 @@ The designs were created to the following widths:
 
 ## Typography
 
-### Body Copy
-
-- Font size: 18px (card titles e.g. Work, Play)
-
 ### Font
 
-- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 300, 400, 500
+- Family: font-family: 'Rubik', sans-serif;
+- Weights: 300, 400, 500, 600, 700
+
+- Family: font-family: 'Josefin Sans', sans-serif;
+- Weights: 300, 400, 500, 600, 700
