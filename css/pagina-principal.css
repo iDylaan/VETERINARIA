@@ -7,17 +7,21 @@
 }
 
 :root {
-    --white: hsl(0, 0%, 100%);
-    --productos-bg-categoria: rgb(174, 255, 174);
-    --productos-letras-categoria: rgb(52, 87, 52);
 
-    --estetica-bg-categoria: rgb(182, 240, 255);
-    --estetica-letras-categoria: rgb(44, 85, 96);
+    --atencion-medica-bg-categoria: hsl(0, 96%, 82%);
+    --atencion-medica-letras-categoria: hsl(0, 21%, 32%);
 
-    --atencion-medica-bg-categoria: rgb(253, 167, 167);
-    --atencion-medica-letras-categoria: rgb(98, 64, 64);
+    /* --productos-bg-categoria: hsl(120, 100%, 84%); */
+    --productos-bg-categoria: var(--green-200);
+    /* --productos-letras-categoria: hsl(120, 25%, 27%); */
+    --productos-letras-categoria: var(--pastel-green-800);
 
-    --bg-oscuro: #002632;
+    /* --estetica-bg-categoria: hsl(192, 100%, 86%); */
+    --estetica-bg-categoria: var(--blue-200);
+    /* --estetica-letras-categoria: hsl(193, 37%, 27%); */
+    --estetica-letras-categoria: var(--pastel-blue-800);
+
+    --bg-oscuro: hsl(192, 100%, 10%); /* --blue-900 */
 }
 
 body {
