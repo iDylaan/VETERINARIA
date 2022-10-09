@@ -1,18 +1,19 @@
-body {
+body  {
+    overflow-x: hidden;
     background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .nav{
     margin: auto;
   }
   header {
     /* border: 1px solid red; */
-    background-size: cover;
-    background-position: -500px -300px;
-    background-attachment: fixed;
     padding-top: 20px;
     margin: auto;
     width: 100%;
-    height: 400px;
+    height: 100px;
+    background-color: rgba(23, 4, 78, 1) ;
 }
   .header__container {
     /* border: 1px solid white; */
@@ -23,11 +24,11 @@ body {
 }
 .formulario h1{
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 5 5 20px 5;
     border-bottom: 1px solid silver;
 }
 .header__nav {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +47,7 @@ body {
 }
 #logo {
     width: 80%;
-    height: 35px;
+    height: 50px;
 }
 .header__logo {
     /* border: 1px solid red; */
@@ -54,6 +55,7 @@ body {
     text-transform: uppercase;
     float: left;
     cursor: pointer;
+   
 }
 .header__logo h1 {
     display: flex;
@@ -62,6 +64,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     align-items: center;
     color: var(--white);
+    align-content: flex-end;
 }
 .header__navegador-central {
     text-align: center;
@@ -69,30 +72,30 @@ body {
 .navegeador-lateral {
     text-align: right;
 }
-.citas{
-    background-color: rgba(23, 4, 78, 1);
-    align-content: center;
-    border-width: 80px;
-    padding: 40px 50px;
-}
+
 .container {
-    position: absolute;
+    display: contents;
     text-align: center;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 100px;
 }
 .citas{
-   margin-left: 60px;
-   margin-right: 60px;
-    top: 50%;
-    left: 50%;
+    padding: 40px 50px;
+   margin-left: 100px;
+   margin-right: 100px;
+    top: 100%;
+    left: 100%;
     width: 400px;
     background: rgba(23, 4, 78, 1);
     border-radius: 10px;
+    align-content: center;
+    border-width: 80px;
+
 }
 .tabla{
     color: white;
-
+    text-align: center;
+    align-content: center;
 }
 .boton{
     border-radius: 20;
