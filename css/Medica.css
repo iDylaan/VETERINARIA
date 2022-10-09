@@ -1,117 +1,72 @@
-body{
-    overflow-x: hidden;
-    background-image: url('../imagenes/FONDO\ ATENCIÓN\ MEDICA.jpg');
-    background-repeat: no-repeat;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("../imagenes/FONDO\ ATENCIÓN\ MEDICA.jpg");
     background-size: cover;
-    max-width: 40px;
-    max-height: 30px;
+    background-position: 50% 50%;
+    height: 50vh;
+    border: 5px solid blue;
 }
-.nav{
+
+.header__container {
     margin: auto;
-  }
-  header {
-    /* border: 1px solid red; */
-    padding-top: 20px;
-    margin: auto;
-    width: 100%;
-    height: 100px;
-    background-color: none;
+    width: 75%;
+    border: 5px solid red;
+
 }
-  .header__container {
-    /* border: 1px solid white; */
-    position: relative;
-    height: 500px;
-    margin: auto;
-    position: fixed;
-}
-.formulario h1{
-    text-align: center;
-    padding: 5 5 20px 5;
-    border-bottom: 1px solid silver;
-}
-.header__nav {
-    width: 100%;
+
+.header {
+    background-color: hsl(0, 0%, 10%);
+    /* border: 5px red; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}  
-.header__nav-container {
-    transition: all 0.3s;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    height: 80px;
-}
-#logo {
-    width: 80%;
-    height: 50px;
-}
-.header__logo {
-    /* border: 1px solid red; */
-    display: flex;
-    text-transform: uppercase;
-    float: left;
-    cursor: pointer;
-   
-}
-.header__logo h1 {
-    display: flex;
-    text-transform: uppercase;
-    font-size: 1.6em;
-    font-family: 'Josefin Sans', sans-serif;
-    align-items: center;
-    color: var(--white);
-    align-content: flex-end;
-}
-.header__navegador-central {
-    text-align: center;
-}
-.navegeador-lateral {
-    text-align: right;
-}
-
-.container {
-    display: contents;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-}
-
-.servicio{
-    border: 1px solid red;
-    text-align: center;
-    justify-content: center;
-    left: 50px;
     color: white;
-    display: flex;
-    font-size: 2.3em;
-    width: 100px;
-    float: left;
-    align-content: flex-end;
 }
-.boton{
-    color:white;
+
+.logo {
+    border: 5px solid plum;
+}
+
+.opciones {
+    border: 5px solid plum;
+    display: flex;
+    gap: 50px;
+}
+
+.opciones > p {
+    font-size: 1.2rem;
+}
+
+.descripcion {
+    border: 5px solid burlywood;
+    height: 30vh;
+}
+
+.titulo__header {
+    border: 5px solid green;
+    width: 900px;
+    margin: auto;
+    margin-top: 13vh;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.titulo__header button {
+    background-color: red;
+    border: none;
     border-radius: 50px;
-    border-color: rgb(233, 95, 95);
-    background-color: rgb(233, 95, 95);
-    width: 100px;
-    height: 50px;
-}
-.texto{
-   width: auto;
-   display: flex;
-   justify-content: center;
-    background-color: brown;
     color: white;
-    
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-top: 35px;
 }
-#ser{
-    justify-content: center;
-    width: 550px;
-    height: 400px;
+
+.descripcion {
+    text-align: center;
 }
