@@ -8,11 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../css/pagina-principal.css">
+    <link rel="stylesheet" href="./css/pagina-principal.css">
 
     <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
     <script src="./js/index.js" defer></script>
-    <script src="./js/jquery-3.6.1.min.js" defer></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -28,23 +27,33 @@
                         <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
                         <h1><span>v</span>eterinaria</h1>
                     </div>
-                    <div class="header__navegador-central">
-                        <p class="header__nav-link" id="nav-home"><i class="fa-solid fa-house"></i> Home</p>
-                        <p class="header__nav-link" id="nav-quienes-somos">¿Quiénes somos?</p>
-                        <p class="header__nav-link" id="nav-pedidos">Pedidos</p>
-                        <p class="header__nav-link" id="nav-ubicacion">Ubicación</p>
-                    </div>
 
-                    <div class="navegeador-lateral">
-                        <p class="header__nav-link" id="nav-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito
-                        </p>
-                        <p class="header__nav-link" id="nav-login"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+                    <div class="header__nav-mobile">
+                        <div class="bars__menu">
+                            <span class="line1__bars-menu"></span>
+                            <span class="line2__bars-menu"></span>
+                            <span class="line3__bars-menu"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="header__nav-desktop">
+                        <div class="header__navegador-central">
+                            <p class="header__nav-link" id="nav-home"><i class="fa-solid fa-house"></i> Home</p>
+                            <p class="header__nav-link" id="nav-quienes-somos">¿Quiénes somos?</p>
+                            <p class="header__nav-link" id="nav-pedidos">Pedidos</p>
+                            <p class="header__nav-link" id="nav-citas">Tus citas</p>
+                            <p class="header__nav-link" id="nav-ubicacion">Ubicación</p>
+                        </div>
+    
+                        <div class="navegeador-lateral">
+                            <p class="header__nav-link" id="nav-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito</p>
+                            <p class="header__nav-link" id="nav-login"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <section class="categorias">
-
+            <section class="categorias-desktop">
                 <div class="categorias__container">
 
                     <div class="categorias__productos"><i class="fa-solid fa-carrot"></i>
@@ -58,7 +67,35 @@
                     </div>
 
                 </div>
-            </Section>
+            </section>
+
+            <section class="header-nav-mobil">
+                <div id="back-menu"></div>
+
+                <div class="header-nav-mobil__container">
+                    <div class="nav-mobil__opciones" id="menu-responsive-lateral">
+
+                        <!-- <div class="nav-mobile__logo">
+                            <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
+                        </div> -->
+
+
+                        <div class="nav-mobile__main-options">
+                            <p class="header__nav-link" id="nav-login-mobile"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+                            <p class="header__nav-link" id="nav-carrito-mobile"><i class="fa-solid fa-cart-shopping"></i> Carrito</p>
+                        </div>
+
+                        <div class="nav-mobile__secondary-options">
+                            <p class="header__nav-link" id="nav-home-mobile"><i class="fa-solid fa-house"></i> Home</p>
+                            <p class="header__nav-link" id="nav-quienes-somos-mobile">¿Quiénes somos?</p>
+                            <p class="header__nav-link" id="nav-pedidos-mobile">Pedidos</p>
+                            <p class="header__nav-link" id="nav-citas-mobile">Tus Citas</p>
+                            <p class="header__nav-link" id="nav-ubicacion-mobile">Ubicación</p>    
+                        </div>
+
+                       </div>
+                </div>
+            </section>
         </div>
 
     </header> <!-- header -->
@@ -91,75 +128,97 @@
         </button>
     </div>
 
-    <!-- <div class="ilustracion-categorias">
-        <div class="carta">
-            <ul class="card-wrapper">
-                <li class="card">
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyR5Ow3EVpRKnxI8q7jApCRzQ37MNVe4egg&usqp=CAU'
-                        alt=''>
-                    <h3><a href=""></a></h3>
-                    <p>Productos de la mejor calidad</p>
-                </li>
-                <li class="card">
-                    <img src='http://www.clinicazoomundo.com.mx/admin/dbfiles/dbcontenidos/dbfulls/88.jpg' alt=''>
-                    <h3><a href=""></a></h3>
-                    <p>Tratamiento de Limpieza</p>
-                </li>
-                <li class="card" id="card-3">
-                    <img src='https://www.purina-latam.com/sites/g/files/auxxlc391/files/purina-esterilizaci%C3%B3n-de-mascotas.jpg'
-                        alt=''>
-                    <h3><a href=""></a></h3>
-                    <p>Atencion las 24 horas</p>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
     <!-- PRODUCTOS FAVORITOS -->
     <div class="productos-favoritos__container">
         <h1>Estos son los productos favoritos de nuestros clientes 🦮</h1>
 
-        <div class="producto-izq__container">
-            <div class="producto-izq__imagen">
-                <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
-            </div>
-
-            <div class="producto-izq__details">
-                <div>
-                    <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
-                    <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
-                    </p>
+        <section class="productos__desktop">
+            <div class="producto-izq__container">
+                <div class="producto-izq__imagen">
+                    <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
                 </div>
+    
+                <div class="producto-izq__details">
+                    <div>
+                        <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
+                        <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+    
+                    <div class="producto-izq__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div> <!-- Producto izquierdo -->
+    
+            <div class="producto-dcha__container">
+    
+                <div class="producto-dcha__details">
+                    <div>
+                        <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
+                        </p>
+                        <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+                    <div class="producto-dcha__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="producto-dcha__imagen">
+                    <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
+                </div>
+    
+            </div> <!-- Producto derecho -->
+        </section>
 
-                <div class="producto-izq__boton">
-                    <button id="agregar-al-carrito">
-                        Agregar al carrito
-                    </button>
+        <section class="productos__mobile">
+            <div class="producto__container">
+                <div class="producto__imagen">
+                    <img src="./imagenes/pd-1.webp" alt="Imagen de producto">
+                </div>
+    
+                <div class="producto__details">
+                    <div>
+                        <p class="producto__titulo">Pato Interactivo para Esconder Premios, con Silbato Chillón</p>
+                        <p class="producto__precio">$ <span class="cantidad">226.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+    
+                    <div class="producto__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div> <!-- Producto izquierdo -->
+    
+            <div class="producto__container">
 
-        <div class="producto-dcha__container">
-
-            <div class="producto-dcha__details">
-                <div>
-                    <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
-                    </p>
-                    <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
-                    </p>
+                <div class="producto__imagen">
+                    <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
                 </div>
-                <div class="producto-dcha__boton">
-                    <button id="agregar-al-carrito">
-                        Agregar al carrito
-                    </button>
+    
+                <div class="producto__details">
+                    <div>
+                        <p class="producto__titulo">Collar Antipulgas Antigarrapatas para Perros y Gatos Duración 8 Meses
+                        </p>
+                        <p class="producto__precio">$ <span class="cantidad">120.00</span> <span class="moneda">MXN</span>
+                        </p>
+                    </div>
+                    <div class="producto__boton">
+                        <button id="agregar-al-carrito">
+                            Agregar al carrito
+                        </button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="producto-dcha__imagen">
-                <img src="./imagenes/pd-2.webp" alt="Imagen de producto">
-            </div>
-
-        </div> <!-- Producto derecho -->
+    
+            </div> <!-- Producto derecho -->
+        </section>
 
         <div class="productos-favoritos__boton-ver-todo">
             <button id="btn-ver-todo">Ver todo</button>
@@ -206,7 +265,6 @@
         </div>
 
         <!-- UBICACION -->
-        <section id="ubicacion">
             <div class="ubicacion__container">
                 <h1>¿Dónde nos encontramos?</h1>
 
@@ -250,17 +308,13 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="quienes-somos">
             <div class="quienes-somos__container">
                 <h1>¿Quiénes somos?</h1>
 
                 <div class="quienes-somos__descripcion">
-                    <div class="quienes-somos__logo">
-                        <img src="./imagenes/logo.png" alt="Logo de Veterinaria">
-                    </div>
                     <div class="quienes-somos__info">
+                        <img src="./imagenes/logo.png" alt="Logo de Veterinaria">
                         <p>Somos una institución veterinaria dedicada a la salud animal, servicios de estética y
                             productos para las mejores mascotas, participando en su transformación hacia el Departamento
                             con la mejor sanidad, vigilancia y trato humanitario para con los animales en México.</p>
@@ -312,13 +366,13 @@
                     </div>
 
                     <div class="valores__imagen">
+                        <img id="valores-img-mobile" src="./imagenes/Valores-img2mobile.jpg" alt="Ilustracion Valores de Veterinaria">
                         <img src="./imagenes/Valores-img.jpg" alt="Ilustracion de valores de Veterinaria">
                     </div>
                 </div>
 
             </div>
     </div>
-    </section>
 
     <footer>
         <div class="bg-footer"></div>

@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/inicio_sesion.css">
     <title>Registrate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/inicio_sesion.css">
+
+    <script src="../js/login-signin.js" defer></script>
 </head>
 <body>
+    
     <div class="container">
         <div class="formulario">
             <h1>Registro</h1>
-            <form>
+            <form action="../index.html">
                 <div class="username">
-                    <input type="email" required>
-                    <label for="">Correo eletronico</label>
+                    <input id="input-nombre" type="text" required>
+                    <label id="label-nombre" for="">Nombre Completo</label>
                 </div>
+
+                <div class="username-date">
+                    <label for="">Fecha de Nacimiento</label> <br>
+                    <input type="date" required>
+                </div>
+
                 <div class="username">
-                    <input type="password" required>
-                    <label for="">Contraseña</label>
+                    <input id="input-email" type="email" required>
+                    <label id="label-email" for="">Correo Electrónico</label>
                 </div>
-                <div class="recordar">¿Olvido su contraseña?</div>
-                <input type="checkbox" name="terminos" id="genero"><a href="#"> Acepta Terminos & Condiciones </a></input>
-                <input type="submit" value="iniciar">
+
+                <div class="username">
+                    <input id="input-telefono" type="number" required>
+                    <label id="label-telefono" for="">Número de Teléfono</label>
+                </div>
+
+                <div class="username">
+                    <input id="input-password" type="password" required>
+                    <label id="label-password" for="">Crear Contraseña</label>
+                </div>
+                <div class="politicas-privacidad">
+                    <input type="checkbox" name="terminos" required><a href="#"> Acepta Terminos & Condiciones </a></input>
+                </div>
+                
+                <button type="submit">Registrarse</button>
             </form>
         </div>
+
     </div>
 </body>
 </html>

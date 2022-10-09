@@ -2,32 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/inicio_sesion.css">
     <title>iniciar sesion</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../css/inicio_sesion.css">
+
+    <script src="../js/login-signin.js" defer></script>
 </head>
 <body>
-    <div class="backgournd">
-    </div>
-    <div class="formulario">
-        <h1>Inicio de Sesion</h1>
-        <form method="post">
-            <div class="username">
-                <input type="text" required>
-                <label for="">Nombre de usuario.</label>
-            </div>
-            <div class="username">
-                <input type="password" required>
-                <label for="">Contraseña</label>
-            </div>
-            <div class="recordar">¿Olvido su contraseña?</div>
-            <input type="submit" value="iniciar">
-            <div class="registrarse">
-                ¿No tienes una cuenta? <a href="./registro.html">crear cuenta.</a>
-            </div>
-        </form>
-
+    <div class="container">
+        <div class="formulario">
+            <h1>Inicio de Sesión</h1>
+            <form action="./index_sesion.html">
+                <div class="username">
+                    <input id="input-email" type="email" required>
+                    <label id="label-email" for="">Correo Electrónico</label>
+                </div>
+                <div class="username">
+                    <input id="input-password" type="password" required>
+                    <label id="label-password" for="">Contraseña</label>
+                </div>
+                <div class="recordar">¿Olvidó su contraseña?</div>
+                    <button type="submit">Iniciar Sesión</button>
+                <div class="registrarse">
+                    ¿No tienes una cuenta? <a href="./registro.html">crear cuenta.</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
