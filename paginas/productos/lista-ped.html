@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Detalles Producto</title>
+    <title>Lista Producto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/lista.css">
 
     <link rel="stylesheet" href="../../css/detalle_producto.css" />
 
@@ -41,9 +43,56 @@
 
     </header>
 
-    <table>
-        
-    </table>
+
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Numero de Pedido</th>
+                    <th>Total Pedido</th>
+                    <th>Estado</th>
+                    <th>Fecha Pedido</th>
+                    <th>Forma de Pago</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0001</td>
+                    <td>$700.00</td>
+                    <td>🟢</td>
+                    <td>9-abril-2022</td>
+                    <td>Efectivo</td>
+                    <td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>0002</td>
+                    <td>$1600.00</td>
+                    <td>🟢</td>
+                    <td>24-jun-2022</td>
+                    <td>Transferencia</td>
+                    <td>Entregado</td>
+                </tr>
+                <tr>
+                    <td>0003</td>
+                    <td>$1,200.00</td>
+                    <td>🟡</td>
+                    <td>28-julio-2022</td>
+                    <td>Deposito</td>
+                    <td>En proceso de Entrega</td>
+                </tr>
+                <tr>
+                    <td>0004</td>
+                    <td>$200.00</td>
+                    <td>🔴</td>
+                    <td>4-sep-2022</td>
+                    <td>Efectivo</td>
+                    <td>Falta pago</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
 </body>
 </html>
