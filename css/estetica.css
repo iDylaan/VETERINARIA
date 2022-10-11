@@ -1,0 +1,123 @@
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+    -webkit-background-size:cover ;
+    -moz-background-size:cover ;
+    -moz-background-size:cover ;
+    background-size: cover ;
+    border-radius: 50%;
+}
+
+img{
+ width:300px;
+height:300px;
+border-radius:2620px;
+border:10px solid #666;
+    
+}
+header {
+    /* border: 1px solid red; */
+    background-image: url('../imagenes/bg-header.jpg');
+    background-size: cover;
+    background-position: -100px 0px;
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.header__container {
+    /* border: 1px solid white; */
+    position: relative;
+    height: 500px;
+    width: 70%;
+    margin: auto;
+}
+
+#logo {
+    width: 100%;
+    height: 35px;
+}
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--white);
+    float: left;
+}
+
+.header__logo h1>span {
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+.header__navegador {
+    /* border: 1px solid red; */
+    text-align: right;
+
+}
+
+.header__nav-quienes-somos {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--white);
+    opacity: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url('../imagenes/petsbg.png');
+    background-repeat: repeat;
+}
+.pro{
+    background-color: white;
+}
+.categorias__container {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+    justify-content: center;
+}
+:root {
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+.categorias__container{
+    margin-left: -160px;
+}
+	
+.center{
+    justify-content: center;
+}

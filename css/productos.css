@@ -97,20 +97,24 @@ body {
 
 
 
-
+.categorias__container{
+    margin-left: -160px;
+}
 	
-
+.center{
+    justify-content: center;
+}
 
 
 
 
 h4{
-  
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
     font-size: 55rem;
-    margin: auto;
-   
+    margin-bottom: 2522px;
+   color: aliceblue;
+  
 }
 .container-1 input#search{
     width: 300px;
@@ -123,7 +127,9 @@ h4{
     padding-left: 45px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 52px;
+    margin-left: 255px;
+  
    
   
   }
@@ -131,14 +137,17 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:250px;
-    margin-top: -100px;
-    margin-right: 100px;
+   margin: auto;
+  }
+  .text{
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
   }
 
 .categorias__estetica{
-    padding: 20px 30px;
-    border: 1px solid var(--white);
+    padding: 10px 20px;
+    margin: auto;
     border-radius: 5px;
     margin: 180px auto 0px auto;
     font-size: 2em;
@@ -147,6 +156,8 @@ h4{
     text-transform: uppercase;
     transition: all 150ms;
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .categorias__estetica i{
@@ -170,4 +181,51 @@ h4{
 .categorias__container{
     justify-content: center;
     text-align: center;
+}
+
+footer{
+    display: flex;
+    background-color: #00161d;
+}
+
+.redes {
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    border: 1px;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.politicas{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: right;
+}
+
+.politicas a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
