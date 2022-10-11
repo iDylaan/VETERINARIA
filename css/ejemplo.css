@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
+    background-size: cover;
+    background-position: 60% 60%;
+    height: 80vh;
+    
+}
+#logo {
+    width: 80%;
+    height: 50px;
+}
+
+.header__container {
+    
+    margin: auto;
+    width: 80%;
+   
+
+}
+.header__container > h1{
+    align-content: flex-end;
+   
+}
+
+.header {
+    
+    /* border: 5px red; */
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+   
+    gap: 50px;
+    display: flex;
+}
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+   
+}
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+    align-content: flex-end;
+}
+
+.opciones {
+    
+    display: flex;
+    gap: 50px;
+}
+
+.opciones > p {
+    font-size: 1.2rem;
+   
+}
+
+.descripcion {
+    border: 5px solid burlywood;
+    height: 20vh;
+    background-color: brown;
+    color: white;
+}
+
+.titulo__header {
+    
+    width: 900px;
+    margin: auto;
+    margin-top: 30vh;
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.titulo__header button {
+    background-color: rgb(243, 84, 84);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin-top: 35px;
+}
+
+.descripcion {
+    height: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.conten{
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+.tema{
+    justify-content: center; 
+}
