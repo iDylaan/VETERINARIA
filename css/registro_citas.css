@@ -1,10 +1,10 @@
-<<<<<<< Updated upstream
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
 }
+
 body{
     background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
     background-size: cover;
@@ -23,7 +23,6 @@ header {
     border: 5px solid rgb(255, 0, 0);
 }
 
-=======
 body {
     font-family: 'Rubik', sans-serif;
     background-image: url('../imagenes/FONDO\ DE\ CITAS.jpg');
@@ -43,7 +42,6 @@ header {
     border: 5px solid red;
     background-color:rgba(23, 4, 78, 1);
 }
->>>>>>> Stashed changes
 
 .header-nav-mobil {
     visibility: hidden;
@@ -52,13 +50,9 @@ header {
 .header__container {
     /* border: 1px solid white; */
     position: relative;
-    height: 500px;
+    height: 50px;
     margin: auto;
-<<<<<<< Updated upstream
-    
-=======
     color: white;
->>>>>>> Stashed changes
 }
 
 .header__nav-container {
@@ -71,7 +65,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    height: 80px;
+    height: 50px;
 }
 
 .header__nav {
@@ -92,7 +86,6 @@ header {
     height: 50px;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
-<<<<<<< Updated upstream
 }
 
 .invisible {
@@ -110,9 +103,6 @@ header {
     height: 35px;
 }
 
-=======
-}
-
 .invisible {
     position: absolute;
     visibility: hidden;
@@ -128,7 +118,6 @@ header {
     height: 35px;
 }
 
->>>>>>> Stashed changes
 .header__logo {
     /* border: 1px solid red; */
     display: flex;
@@ -169,26 +158,6 @@ header {
     /* Otra forma de colocar elemntos uno al lado del otro */
     opacity: 80%;
 }
-<<<<<<< Updated upstream
-.contenido{
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(23, 4, 78, 1);
-    border: white;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 30px;
-    margin-top: 35px;
-}
-
-.conten{
-    background-color: rgba(23, 4, 78, 1);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    justify-content: center;
-    width: 60px;
-    height: 70vh;
-=======
 
 .header__nav-link:hover {
     /* color:rgb(52, 52, 52); */
@@ -264,7 +233,6 @@ header {
         border-top-left-radius: 2px;
         border-top-right-radius: 2px;
     }
->>>>>>> Stashed changes
     
     .line3__bars-menu {
         border-bottom-left-radius: 2px;
@@ -311,37 +279,64 @@ header {
     }
 }
 
-/*formulario*/
-.container{
-    border: 5px solid burlywood;
+/*  ------------- ----- FORMULARIO ----- ------------- */
+
+.contenido{
     justify-content: center;
-    height: 70vh;
-   text-align: center;
-    border: 5px solid red;
-    background-color:rgba(23, 4, 78, 1);
+    text-align: center;
+    background-color: rgba(23, 4, 78, 1);
+    border: white;
+    color: white;
+    font-size: 1rem;
+    padding: 30px 20px;
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
 }
-.formulario{
+
+.content {
+    width: 100%;
+    height: 80vh;
+    display: flex;
     justify-content: center;
-   text-align: center;
-   top: 5vh;
 }
-<<<<<<< Updated upstream
+
 .tema{
     justify-content: center;
     text-align: center;
     color: white;
-    
-=======
-.boton{
-    border-radius: 20;
-    background-color: rgba(23, 4, 78, 1);
-    border-color: white;
->>>>>>> Stashed changes
-}
-.tabla{
-    color: white;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+    margin-bottom: 25px;
 }
 
+form {
+    text-align: left;
+    margin: 0px 5rem;
+}
+
+.input-datos {
+    margin: auto auto 15px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-datos input {
+    padding: 6px 6px;
+    outline: none;
+}
+
+.input-datos button {
+    background-color: transparent;
+    border: 2px solid blue;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    border-radius: 100px;
+    transition: all 0.275s ease;
+}
+
+.input-datos button:hover {
+    background-color: blue;
+    transition: all 0.275s ease;
+}
