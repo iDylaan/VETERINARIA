@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *{
     padding: 0;
     margin: 0;
@@ -22,6 +23,27 @@ header {
     border: 5px solid rgb(255, 0, 0);
 }
 
+=======
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url('../imagenes/FONDO\ DE\ CITAS.jpg');
+    background-repeat: repeat;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/* --------- ------ HEADER ------ --------- */
+
+header {
+    background-color: var(--pastel-green-500);
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border: 5px solid red;
+    background-color:rgba(23, 4, 78, 1);
+}
+>>>>>>> Stashed changes
 
 .header-nav-mobil {
     visibility: hidden;
@@ -32,7 +54,11 @@ header {
     position: relative;
     height: 500px;
     margin: auto;
+<<<<<<< Updated upstream
     
+=======
+    color: white;
+>>>>>>> Stashed changes
 }
 
 .header__nav-container {
@@ -66,6 +92,7 @@ header {
     height: 50px;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+<<<<<<< Updated upstream
 }
 
 .invisible {
@@ -83,6 +110,25 @@ header {
     height: 35px;
 }
 
+=======
+}
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: relative;
+    visibility: visible;
+}
+
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
+>>>>>>> Stashed changes
 .header__logo {
     /* border: 1px solid red; */
     display: flex;
@@ -123,6 +169,7 @@ header {
     /* Otra forma de colocar elemntos uno al lado del otro */
     opacity: 80%;
 }
+<<<<<<< Updated upstream
 .contenido{
     justify-content: center;
     text-align: center;
@@ -141,11 +188,160 @@ header {
     justify-content: center;
     width: 60px;
     height: 70vh;
-    
+=======
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--white);
+    opacity: 100%;
 }
+
+.back-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 1300px) {
+    .header__logo h1 {
+        visibility: hidden;
+        position: absolute;
+     }
+
+    .header__logo {
+        /* border: 1px solid red; */
+        display: inline;
+        cursor: pointer;
+    }    
+
+    #logo {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1080px) {   
+
+    /* ESCONDER EL HEADER DE ESCRITORIO */
+    .header__nav-desktop {
+        display: none;
+    }
+    
+    /* GENERACIÓN DEL BOTÓN */
+    .header__nav-mobile {
+        width: 0px;
+        margin-right: 0;
+    }
+
+    .bars__menu {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20%;
+        left: 87%;
+        opacity: 80%;
+        cursor: pointer;
+        transition: 0.275s;
+    }
+    
+    .active-bars__menu {
+        transition: 0.275s;
+        opacity: 100%;
+    }
+    
+    .bars-abajo {
+        top: 0%;
+    }
+
+    .bars__menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--white);
+        margin-top: 9px;
+    }
+
+    .line1__bars-menu {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+>>>>>>> Stashed changes
+    
+    .line3__bars-menu {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    /* MENU DESPLEGABLE PARA MOBILES */
+    .header-nav-mobil {
+        visibility: visible;
+        position: relative;
+    }
+    
+
+    .header-nav-mobil__container {
+        position: fixed;
+        top: 0;
+        right: -270px;
+        background-color: var(--pastel-green-550);
+        width: 270px;
+        height: 100vh;
+        z-index: 10;
+        padding: 40px;
+    }
+
+    .nav-mobile__logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-mobile__main-options {
+        margin-bottom: 30px;
+    }
+
+    #back-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        z-index: 1;
+        background-color: var(--grey-900);
+        display: none;
+    }
+}
+
+/*formulario*/
+.container{
+    border: 5px solid burlywood;
+    justify-content: center;
+    height: 70vh;
+   text-align: center;
+    border: 5px solid red;
+    background-color:rgba(23, 4, 78, 1);
+}
+.formulario{
+    justify-content: center;
+   text-align: center;
+   top: 5vh;
+}
+<<<<<<< Updated upstream
 .tema{
     justify-content: center;
     text-align: center;
     color: white;
     
+=======
+.boton{
+    border-radius: 20;
+    background-color: rgba(23, 4, 78, 1);
+    border-color: white;
+>>>>>>> Stashed changes
 }
+.tabla{
+    color: white;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
