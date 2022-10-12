@@ -2,53 +2,95 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+body{
+    background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
+    background-size: cover;
 }
 
 header {
-    background-image: url("../imagenes/FONDO\ DE\ CITAS.jpg");
-    background-size: cover;
-    background-position: 60% 60%;
-    height: 80vh;
-    
+    background-position: 100px;
+    background-color: rgba(23, 4, 78, 1);
+    height: 15vh;
+    color: white;
+    border: 5px solid rgb(255, 0, 0);
 }
-#logo {
-    width: 80%;
-    height: 50px;
+.header{
+    
+    background-size: cover;
+    border: 5px solid rgb(255, 0, 0);
+}
+
+
+.header-nav-mobil {
+    visibility: hidden;
 }
 
 .header__container {
-    
+    /* border: 1px solid white; */
+    position: relative;
+    height: 500px;
     margin: auto;
-    width: 80%;
-   
-
-}
-.header__container > h1{
-    align-content: flex-end;
-   
-}
-
-.header {
     
-    /* border: 5px red; */
+}
+
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+}
+
+.header__nav {
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    color: rgb(0, 0, 0);
+    align-items: center;
+}   
+
+.header__nav-desktop {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.logo {
-   
-    gap: 50px;
-    display: flex;
+.abajo {
+    background-color: var(--bg-oscuro);
+    width: 100%;
+    height: 50px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
 }
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: relative;
+    visibility: visible;
+}
+
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
 .header__logo {
     /* border: 1px solid red; */
     display: flex;
     text-transform: uppercase;
     float: left;
     cursor: pointer;
-   
 }
+
 .header__logo h1 {
     display: flex;
     text-transform: uppercase;
@@ -56,60 +98,54 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     align-items: center;
     color: var(--white);
-    align-content: flex-end;
 }
 
-.opciones {
-    
-    display: flex;
-    gap: 50px;
+.header__logo span {
+    font-size: 1.3em;
+    color: var(--white);
 }
 
-.opciones > p {
-    font-size: 1.2rem;
-   
-}
-
-.descripcion {
-    border: 5px solid burlywood;
-    height: 20vh;
-    background-color: brown;
-    color: white;
-}
-
-.titulo__header {
-    
-    width: 900px;
-    margin: auto;
-    margin-top: 30vh;
-    background-color: none;
-    color: white;
+.header__navegador-central {
     text-align: center;
-    font-size: 20px;
 }
 
-.titulo__header button {
-    background-color: rgb(243, 84, 84);
-    border: none;
-    border-radius: 50px;
+.navegeador-lateral {
+    text-align: right;
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+.contenido{
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(23, 4, 78, 1);
+    border: white;
     color: white;
     font-size: 1rem;
     padding: 10px 30px;
     margin-top: 35px;
 }
 
-.descripcion {
-    height: auto;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
 .conten{
-    height: 20vh;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgba(23, 4, 78, 1);
+    color: rgb(255, 255, 255);
     text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 70vh;
     
 }
 .tema{
-    justify-content: center; 
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
 }

@@ -30,7 +30,7 @@ header {
 
 .header {
     
-    /* border: 5px red; */
+     border: 5px red; 
     display: flex;
     justify-content: space-between;
     color: rgb(0, 0, 0);
@@ -42,7 +42,7 @@ header {
     display: flex;
 }
 .header__logo {
-    /* border: 1px solid red; */
+     border: 1px solid red; 
     display: flex;
     text-transform: uppercase;
     float: left;
