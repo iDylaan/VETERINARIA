@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="../css/carrito.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Ionicons CSS -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <!-- App CSS -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="..css/app.css" rel="stylesheet">
 
 
     <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
@@ -41,7 +41,7 @@
                 <div class="header__nav">
 
                     <div class="header__logo">
-                        <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
+                        <img id="logo" src="../imagenes/logo.png" alt="Logo veterinaria">
                         <h1><span>v</span>eterinaria</h1>
                     </div>
 
@@ -101,7 +101,7 @@
                 <tbody>
                     
                     <tr>
-                        <td><img src="imagenes/pd-2.webp" width="180" alt="..."></td>
+                        <td><img src="../imagenes/pd-2.webp" width="180" alt="..."></td>
                         <td class="pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus illum deleniti alias voluptates, consequatur, tenetur facere tempora voluptatum obcaecati in dolorum, voluptas adipisci natus? Quas deleniti harum voluptatibus illo.</td>
                         <td class="pt-5">$100.00</td>
                         <td class="pt-5"><input type="text" name="cant" value="1" class="form-control"></td>
@@ -110,7 +110,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="imagenes/pd-4.webp" width="180" alt="..."></td>
+                        <td><img src="../imagenes/pd-4.webp" width="180" alt="..."></td>
                         <td class="pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus illum deleniti alias voluptates, consequatur, tenetur facere tempora voluptatum obcaecati in dolorum, voluptas adipisci natus? Quas deleniti harum voluptatibus illo.</td>
                         <td class="pt-5">$200.00</td>
                         <td class="pt-5"><input type="text" name="cant" value="1" class="form-control"></td>
@@ -119,7 +119,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="imagenes/pd-5.webp" width="180" alt="..."></td>
+                        <td><img src="../imagenes/pd-5.webp" width="180" alt="..."></td>
                         <td class="pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus illum deleniti alias voluptates, consequatur, tenetur facere tempora voluptatum obcaecati in dolorum, voluptas adipisci natus? Quas deleniti harum voluptatibus illo.</td>
                         <td class="pt-5">$200.00</td>
                         <td class="pt-5"><input type="text" name="cant" value="1" class="form-control"></td>
@@ -128,7 +128,7 @@
                     </tr>
 
                     <tr>
-                        <td><img src="imagenes/pd-1.webp" width="180" alt="..."></td>
+                        <td><img src="../imagenes/pd-1.webp" width="180" alt="..."></td>
                         <td class="pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus illum deleniti alias voluptates, consequatur, tenetur facere tempora voluptatum obcaecati in dolorum, voluptas adipisci natus? Quas deleniti harum voluptatibus illo.</td>
                         <td class="pt-5">$200.00</td>
                         <td class="pt-5"><input type="text" name="cant" value="1" class="form-control"></td>
@@ -154,16 +154,39 @@
         <h2>Metodo de pago</h2>
         <div class="contenedor">
             <button type="button">
-                <img id="tarjeta" class="imagen" src="imagenes/tarjeta.png"   width="130" alt="tarjeta">
+                <img id="tarjeta" class="imagen" src="../imagenes/tarjeta.png"   width="130" alt="tarjeta">
 
             </button>
             <button type="button">
-                <img id="efectivo" class="imagen" src="imagenes/efectivo.png"   width="130" alt="efectivo">
+                <img id="efectivo" class="imagen" src="../imagenes/efectivo.png"   width="130" alt="efectivo">
 
             </button>
            
         </div>
-        <a href="" class="btn btn-primary">Confirmar compra</a>
+        <style>
+            .Nuevo {
+color: #318aac !important;
+font-size: 20px;
+font-weight: 500;
+padding: 0.5em 1.2em;
+background: rgba(0,0,0,0);
+border: 2px solid;
+border-color: #318aac;
+transition: all 0.275s ease;
+position: relative;
+}
+.Nuevo:hover {
+background: #318aac;
+color: #fff !important;
+}
+
+
+        </style>
+        <div id="botones">
+            <span class="Nuevo">Confirmar compra</span>
+          </div>
+    </p>
+</form </center>
  
 
     </div>
