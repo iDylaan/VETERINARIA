@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro de producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Ionicons CSS -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- App CSS -->
+    <link href="css/app.css" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/jquery-3.6.1.min.js" defer></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__nav-container">
+                <div class="header__nav">
+
+                    <div class="header__logo">
+                        <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
+                        <h1><span>v</span>eterinaria</h1>
+                    </div>
+
+                    <div class="navegador__container">
+                        <div class="header__nav-mobile">
+                            <div class="bars__menu">
+                                <span class="line1__bars-menu"></span>
+                                <span class="line2__bars-menu"></span>
+                                <span class="line3__bars-menu"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__nav-desktop">
+
+
+                        <p class="header__nav-link" id="nav-pedidos">Nombre</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </header> <!-- header -->
+
+    <h1>PRODUCTOS</h1>
+        <br>
+        <br>
+        <br>
+    <center>
+        <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+            <p>
+                Nombre: <input type="text" name="name_control" autofocus required />
+                <br />
+
+                <br />
+
+                <br />
+                Descripcion: <input type="text" name="date_control" />
+                <br />
+
+                <br />
+                Precio <input type="number" name="number_control" min="-10" max="10" value="0" />
+                <br />
+
+                <br />
+
+
+                Categoria <select name="categoria">
+                    <option value="value1">Comida</option>
+                    <option value="value2" selected>Juguetes</option>
+                    <option value="value3">Ropa</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <style>
+                    .Nuevo {
+  color: #318aac !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 0.275s ease;
+  position: relative;
+}
+.Nuevo:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.Editar {
+  color: #ff0000 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #ff0000;
+  transition: all 0.275s ease;
+  position: relative;
+}
+.Editar:hover {
+  background: #ff0000;
+  color: #fff !important;
+}
+
+                </style>
+                <div id="botones">
+                    <span class="Nuevo">Agregar</span>
+                    <span class="Editar">Editar</span>
+                  </div>
+            </p>
+        </form </center>
+
+</body>
+
+</html>

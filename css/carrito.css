@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url('../imagenes/petsbg.png');
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+/* --------- ------ HEADER ------ --------- */
+
+header {
+    /* border: 1px solid red; */
+    background-image: url('../imagenes/veterinaria.png');
+    background-size: cover;
+    background-position: 800px 800px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 80px;
+}
+
+.header__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid yellow; */
+
+}   
+.navegador__container {
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.header__nav-desktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.abajo {
+    background-color: var(--bg-oscuro);
+    width: 100%;
+    height: 50px;
+}
+
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+
+}
+.header__logo {
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+}
+
+.header__logo span {
+    font-size: 1.3em;
+    color: var(--white);
+}
+
+.header__navegador-central {
+    text-align: center;
+    /* border: 1px solid #FF7E7E; */
+}
+
+.navegeador-lateral {
+    text-align: right;
+    /* border: 1px solid #55D6FF; */
+
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--white);
+    opacity: 100%;
+}
+
+.categorias__container {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: 140px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+.categorias__estetica,
+.categorias__productos,
+.categorias__atencion-medica {
+    padding: 20px 30px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 150ms;
+    display: flex;
+    align-items: baseline;
+}
+
+.categorias__estetica i,
+.categorias__productos i,
+.categorias__atencion-medica i {
+    padding-right: 15px;
+}
+
+.categorias__productos:hover,
+.categorias__estetica:hover,
+.categorias__atencion-medica:hover {
+    transition: all 150ms;
+    cursor: pointer;
+}
+
+.categorias__productos:hover {
+    background-color: var(--productos-bg-categoria);
+    color: var(--productos-letras-categoria);
+    border: 1px solid var(--productos-bg-categoria);
+
+}
+
+.categorias__estetica:hover {
+    background-color: var(--estetica-bg-categoria);
+    color: var(--estetica-letras-categoria);
+    border: 1px solid var(--estetica-bg-categoria);
+}
+
+.categorias__atencion-medica:hover {
+    background-color: var(--atencion-medica-bg-categoria);
+    color: var(--atencion-medica-letras-categoria);
+    border: 1px solid var(--atencion-medica-bg-categoria);
+}
+
+#carouselExampleControls {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 150px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 1500px) {
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1300px) {
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.3em;
+    }
+
+    .header__logo h1 {
+        visibility: hidden;
+        position: absolute;
+     }
+
+    .header__logo {
+        /* border: 1px solid red; */
+        display: inline;
+        cursor: pointer;
+    }    
+
+    #logo {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1140px) {
+    /* BOTON RESPONSIVE PARA MOBILES */
+    
+    .categorias__estetica,
+    .categorias__productos,
+    .categorias__atencion-medica {
+        font-size: 1.5em;
+        margin: 10px auto 0px auto;
+        width: 80%;
+        text-align: center;
+        display: flex;
+    }
+
+    .categorias__estetica i,
+    .categorias__productos i,
+    .categorias__atencion-medica i{
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+
+    .categorias__container {
+        /* border: 1px solid red; */
+        margin: 50px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        justify-content: center;
+
+    }
+}
+
