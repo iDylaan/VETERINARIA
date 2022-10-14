@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agendar Citas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/citas.css">
+
+    <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/jquery-3.6.1.min.js" defer></script>
+  </head>
+  <header>
+    <div class="header_container">
+      <div class="header__nav-container">
+        <div class="header__logo">
+          <img id="logo" src="../imagenes/logo.png" alt="Logo veterinaria">
+          <h1 style="color:white;"><span>V</span>eterinaria</h1>
+        </div>
+        <div style="color: white;" class="header__navegador-central">
+          <p class="header__nav-link" id="nav-home"><i class="fa-solid fa-house"></i> Home</p>
+          <p class="header__nav-link" id="nav-quienes-somos">¿Quiénes somos?</p>
+          <p class="header__nav-link" id="nav-pedidos">Pedidos</p>
+          <p class="header__nav-link" id="nav-ubicacion">Ubicación</p>
+      </div>
+      <div style="color: white;" class="navegeador-lateral">
+        <p class="header__nav-link" id="nav-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito
+        </p>
+        <p class="header__nav-link" id="nav-login"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+      </div>
+    </div>
+    
+  </header>
+  <br>
+  <br>
+  <body> 
+    <div class="container">
+      <div class="citas">
+        <h1 style="color:white ;">REGISTRO PARA AGENDAR CITAS</h1>
+        <form>
+          <table class="tabla">
+            <td>
+              <div class="name">
+                <label for="">Nombre del Dueño</label>
+                <input type="text" required>
+              </div>
+              <td>
+                <div>
+                  <label for="">Nombre de la Mascota</label>
+                  <input type="text" required>
+                </div>
+              </td>
+            </td>
+            <td>
+              <tr>
+                <td>
+                  <div>
+                    <label for="">Día</label>
+                    <input type="date" required>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <label for="">Género</label>
+                    <input type="text" required>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <label for="">Hora</label>
+                    <input type="time" required>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <label for="">Número de Teléfono </label>
+                    <input type="text" required>
+                  </div>
+                </td>
+              </tr>
+          </table>
+          <br>
+          <input style="color: white;" class="boton" type="button" value="SOLICITAR REGISTRO">
+        </form>
+      </div>
+
+    </div>
+
+  </body> 
+ </html>
+ 
