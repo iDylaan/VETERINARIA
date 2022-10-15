@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     background-image: url('../imagenes/petsbg.png');
@@ -8,13 +14,12 @@ body {
 /* --------- ------ HEADER ------ --------- */
 
 header {
-    border: 5px solid rgb(0, 26, 255); 
-    background-color:  hsl(0, 0%, 20%);
+    border: 2px solid #ff0000; 
+    background-color:  #333333;
     color: white;
     background-size: cover;
     background-attachment: fixed;
     background-position: 100px;
-    padding-top: 10px;
     margin: auto;
     width: 100%;
     height: 50px;
@@ -22,26 +27,6 @@ header {
 
 .header-nav-mobil {
     visibility: hidden;
-}
-
-.header__container {
-    border: 3px solid rgb(0, 255, 34);
-    position: relative;
-    height: 100px;
-    margin: auto;
-}
-
-.header__nav-container {
-    transition: all 0.3s;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(30, 97, 51);
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    height: 80px;
 }
 
 .header__nav {
@@ -59,7 +44,6 @@ header {
 #logo {
     width: 80%;
     height: 35px;
-    border: 5px solid rgb(255, 0, 212);
 }
 
 .header__logo {
@@ -68,7 +52,6 @@ header {
     text-transform: uppercase;
     float: left;
     cursor: pointer;
-    border: 5px solid rgb(238, 255, 0);
 }
 
 .header__logo h1 {
@@ -80,51 +63,39 @@ header {
     color: var(--white);
 }
 
-.header__logo span {
-    font-size: 1.3em;
-    color: var(--white);
-}
-
 .header__nav-link:hover {
-    /* color:rgb(52, 52, 52); */
+    color:rgb(52, 52, 52);
     color: var(--white);
     opacity: 100%;
 }
 
-.back-menu {
-    visibility: hidden;
-    position: absolute;
-}
-
 .titulo{
-    color: rgb(0, 0, 0);
-    height: 10vh;
+    color: #000000;
+    height: auto;
+    width: auto;
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    border: 2px solid rgb(255, 0, 0);
-
+    margin-top: 15vh;
 }
 
 .conten{
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    height: 55vh;
     justify-content: center;
     background-color: #D9D9D9;
     padding: 50px 20px;
     margin: auto;
     width: 150vh;
-    border:  #000000 3px solid;
     border-style:inherit;
     padding-top: 1px;
-    
+    border-radius: 15px;
 }
 .cabecera{
-    background-color:  hsl(0, 0%, 20%);
+    background-color:  #000000;
     font-family: 'Rubik', sans-serif;
     color: white;
-    text-align: left;
-    justify-content: center;
-    height: 5vh;
-    width: 10px;
-   
+    text-align: center;
 }
 
 .contenido{
@@ -137,4 +108,8 @@ header {
 }
 .contenido{
     color: black;
+}
+
+.estado{
+    cursor: pointer;
 }
