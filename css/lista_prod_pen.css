@@ -1,0 +1,205 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url('../imagenes/petsbg.png');
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+/* --------- ------ HEADER ------ --------- */
+
+header {
+    /* border: 1px solid red; */
+    background-color:  hsl(0, 0%, 20%);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100px;
+    padding-top: 10px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+}
+
+.header-nav-mobil {
+    visibility: hidden;
+}
+
+.header__container {
+    /* border: 1px solid white; */
+    position: relative;
+    height: 130px;
+    margin: auto;
+}
+
+.header__nav-container {
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 80px;
+}
+
+.header__nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.header__nav-desktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.abajo {
+    background-color: var(--bg-oscuro);
+    width: 100%;
+    height: 50px;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.invisible {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visible {
+    position: relative;
+    visibility: visible;
+}
+
+#logo {
+    width: 80%;
+    height: 35px;
+}
+
+.header__logo {
+    /* border: 1px solid red; */
+    display: flex;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+}
+
+.header__logo h1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    color: var(--white);
+}
+
+.header__logo span {
+    font-size: 1.3em;
+    color: var(--white);
+}
+
+.header__navegador-central {
+    text-align: center;
+}
+
+.navegeador-lateral {
+    text-align: right;
+}
+
+.header__nav-link {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+    /* Otra forma de colocar elemntos uno al lado del otro */
+    opacity: 80%;
+}
+
+.header__nav-link:hover {
+    /* color:rgb(52, 52, 52); */
+    color: var(--white);
+    opacity: 100%;
+}
+
+.back-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 1300px) {
+    .header__logo h1 {
+        visibility: hidden;
+        position: absolute;
+     }
+
+    .header__logo {
+        /* border: 1px solid red; */
+        display: inline;
+        cursor: pointer;
+    }    
+
+    #logo {
+        width: 60px;
+        height: auto;
+    }
+}
+.titulo{
+    color: black;
+    height: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+
+}
+.nuevo{
+    color: black;
+    width: auto;
+    
+    
+}
+.conten{
+    justify-content: center;
+    background-color: white;
+    padding: 50px 20px;
+    margin: auto;
+    width: 150vh;
+    border:  hsl(0, 0%, 95%) 3px solid;
+    border-style:inherit;
+    padding-top: 1px;
+    
+}
+.cabecera{
+    background-color:  hsl(0, 0%, 20%);
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    height: 5vh;
+    width: 10px;
+   
+}
+
+.contenido{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    height: 50px;
+}
+.azul{
+    background-color: rgb(43, 213, 255);
+    color: white;
+    border: none;
+    justify-content: center;
+    
+}
+.rosa{
+    background-color: rgb(218, 131, 131);
+    color: white;
+    border: none;
+}
