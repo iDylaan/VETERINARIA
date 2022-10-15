@@ -8,7 +8,7 @@ body {
 /* --------- ------ HEADER ------ --------- */
 
 header {
-    /* border: 1px solid red; */
+     border: 5px solid red; 
     background-color:  hsl(0, 0%, 20%);
     color: white;
     background-size: cover;
@@ -27,13 +27,13 @@ header {
 .header__container {
     /* border: 1px solid white; */
     position: relative;
-    height: 130px;
+    height:100px;
     margin: auto;
 }
 
 .header__nav-container {
     transition: all 0.3s;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,13 +166,13 @@ header {
     text-align: left;
     justify-content: center;
     background-color: white;
-    padding: 50px 20px;
+    padding: 60px 30px;
     margin: auto;
     width: 150vh;
-    border:  hsl(0, 0%, 95%) 3px solid;
+    border:  white 3px solid;
     border-style:inherit;
     padding-top: 1px;
-    border: 5px red;
+    /*border: 5px solid red;*/
     
 }
 .cabecera{
