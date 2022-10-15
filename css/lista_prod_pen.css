@@ -8,7 +8,7 @@ body {
 /* --------- ------ HEADER ------ --------- */
 
 header {
-    /* border: 1px solid red; */
+    border: 5px solid rgb(0, 26, 255); 
     background-color:  hsl(0, 0%, 20%);
     color: white;
     background-size: cover;
@@ -25,9 +25,9 @@ header {
 }
 
 .header__container {
-    /* border: 1px solid white; */
+    border: 3px solid rgb(0, 255, 34);
     position: relative;
-    height: 130px;
+    height: 100px;
     margin: auto;
 }
 
@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 5px solid rgb(30, 97, 51);
     position: fixed;
     top: 0;
     z-index: 2;
@@ -56,27 +56,10 @@ header {
     justify-content: space-evenly;
 }
 
-.abajo {
-    background-color: var(--bg-oscuro);
-    width: 100%;
-    height: 50px;
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
-}
-
-.invisible {
-    position: absolute;
-    visibility: hidden;
-}
-
-.visible {
-    position: relative;
-    visibility: visible;
-}
-
 #logo {
     width: 80%;
     height: 35px;
+    border: 5px solid rgb(255, 0, 212);
 }
 
 .header__logo {
@@ -85,6 +68,7 @@ header {
     text-transform: uppercase;
     float: left;
     cursor: pointer;
+    border: 5px solid rgb(238, 255, 0);
 }
 
 .header__logo h1 {
@@ -101,25 +85,6 @@ header {
     color: var(--white);
 }
 
-.header__navegador-central {
-    text-align: center;
-}
-
-.navegeador-lateral {
-    text-align: right;
-}
-
-.header__nav-link {
-    cursor: pointer;
-    color: var(--white);
-    font-size: 1.1em;
-    font-weight: 400;
-    margin: 5px 20px;
-    display: inline-block;
-    /* Otra forma de colocar elemntos uno al lado del otro */
-    opacity: 80%;
-}
-
 .header__nav-link:hover {
     /* color:rgb(52, 52, 52); */
     color: var(--white);
@@ -131,43 +96,22 @@ header {
     position: absolute;
 }
 
-@media (max-width: 1300px) {
-    .header__logo h1 {
-        visibility: hidden;
-        position: absolute;
-     }
-
-    .header__logo {
-        /* border: 1px solid red; */
-        display: inline;
-        cursor: pointer;
-    }    
-
-    #logo {
-        width: 60px;
-        height: auto;
-    }
-}
 .titulo{
-    color: black;
-    height: 10px;
+    color: rgb(0, 0, 0);
+    height: 10vh;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    border: 2px solid rgb(255, 0, 0);
 
 }
-.nuevo{
-    color: black;
-    width: auto;
-    
-    
-}
+
 .conten{
     justify-content: center;
-    background-color: white;
+    background-color: #D9D9D9;
     padding: 50px 20px;
     margin: auto;
     width: 150vh;
-    border:  hsl(0, 0%, 95%) 3px solid;
+    border:  #000000 3px solid;
     border-style:inherit;
     padding-top: 1px;
     
@@ -191,15 +135,6 @@ header {
     justify-content: center;
     height: 50px;
 }
-.azul{
-    background-color: rgb(43, 213, 255);
-    color: white;
-    border: none;
-    justify-content: center;
-    
-}
-.rosa{
-    background-color: rgb(218, 131, 131);
-    color: white;
-    border: none;
+.contenido{
+    color: black;
 }
