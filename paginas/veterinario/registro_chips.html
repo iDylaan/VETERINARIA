@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agenda de Citas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index_vet.css">
+    <link rel="stylesheet" href="../../css/registro_chip.css">
+    
+    <script src="https://kit.fontawesome.com/4ad7b82c7d.js" crossorigin="anonymous" defer></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+</head>
+
+<div class="body-background">
+    <div class="patitas"></div>
+</div>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__nav-container">
+                <div class="header__nav">
+                    <div class="header__back">
+                        <a class="nav-link-bar" href="./index_vet.html"><i class="fa-solid fa-caret-left"></i> Regresar</a>
+                    </div>
+
+                    <div class="header__nav-mobile">
+                        <div class="bars__menu">
+                            <span class="line1__bars-menu"></span>
+                            <span class="line2__bars-menu"></span>
+                            <span class="line3__bars-menu"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="header__nav-desktop">
+                        <div class="navegeador-lateral">
+                            <p>Registro del Chip de Rastreo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="header-nav-mobil">
+                <div id="back-menu"></div>
+                <div class="header-nav-mobil__container">
+                    <div class="nav-mobil__opciones" id="menu-responsive-lateral">
+
+                        <div class="nav-mobile__logo">
+                            <img id="logo" src="./imagenes/logo.png" alt="Logo veterinaria">
+                        </div>
+
+
+                        <div class="nav-mobile__main-options">
+                            <p class="header__nav-link" id="nav-login-mobile"><i class="fa-solid fa-user"></i> Iniciar Sesión</p>
+                            <p class="header__nav-link" id="nav-carrito-mobile"><i class="fa-solid fa-cart-shopping"></i> Carrito</p>
+                        </div>
+
+                        <div class="nav-mobile__secondary-options">
+                            <p class="header__nav-link" id="nav-home-mobile"><i class="fa-solid fa-house"></i> Home</p>
+                            <p class="header__nav-link" id="nav-quienes-somos-mobile">¿Quiénes somos?</p>
+                            <p class="header__nav-link" id="nav-pedidos-mobile">Pedidos</p>
+                            <p class="header__nav-link" id="nav-ubicacion-mobile">Ubicación</p>    
+                        </div>
+
+                       </div>
+                </div>
+            </section>
+        </div>
+
+    </header> <!-- header -->
+
+    <div class="form__container">
+        <!-- HEADER DEL FORMULARIO -->
+        <div class="form-header__container">
+            <h2>Datos Para el Registro del Chip de Rastreo</h2>
+        </div>
+
+        <div class="form-qstions__container">
+            <div class="form-usuario__container">
+                <label for="exampleDataList" class="form-label">Selecciona el perfil enlazado al Chip de Rastreo</label>
+                <input class="form-input-text" list="datalistOptions" id="exampleDataList" placeholder="¿A quién buscas?...">
+                <datalist id="datalistOptions">
+                    <!-- Ejemplos -->
+                  <option value="Eduardo Méndez Solis">
+                  <option value="Cinthia Arellano Juárez">
+                  <option value="Daniel Chaparro Marin">
+                  <option value="Brandon Campos Figeroa">
+                  <option value="Yuritzi Hernández Hernández">
+                </datalist>
+
+                <div class="usuario-contact__container">
+                    <div class="usuario_content">
+                        <label>Seleccionado</label>
+                        <div class="usuario__resume">
+                            <div class="usuario__details">
+                                <p><span class="user__selected">Eduardo Méndez Solis</span></h>
+                                <p>correo@ejemplo.com</p>
+                            </div>
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-form__container">
+                    <form>
+                        <div class="form-col1">
+                            <label for="">Número de serie del chip</label>
+                            <input type="text" />
+
+                            <label for="">Nombre Completo del Propietario</label>
+                            <input type="text" />
+
+                            <label for="">Nombre de la mascota</label>
+                            <input type="text" />
+                            
+                            <label for="">Especie</label>
+                            <select name="form-chip-especie" id="form-chip-raza">
+                                <option value="canino">Canino</option>
+                                <option value="canino">Felino</option>
+                                <option value="canino">Ave</option>
+                            </select>
+                            
+                            <label for="">Color(es)</label>
+                            <input type="text" />
+                        </div>
+
+                        <div class="form-col2">
+                            <label for="">Teléfono</label>
+                            <input type="text" />
+
+                            <label for="">Calle y número</label>
+                            <input type="text" />
+                            
+                            <label for="">CP</label>
+                            <input type="text" />
+
+                            <label for="">Raza</label>
+                            <select name="form-chip-raza" id="form-chip-raza">
+                            </select>
+
+                            <label for="">Fecha de nacimiento de la mascota</label>
+                            <input type="date" />
+                        </div>
+
+                        <div class="form-sexo__container">
+                            <label for="">Sexo</label>
+
+                            <div class="form-sexo__options">
+                                <input type="radio">
+                                <label for="">Hembra</label>
+                                
+                                <input type="radio">
+                                <label for="">Macho</label>
+                            </div>
+                        </div>
+
+                        <div class="form-descripcion__container">
+                            <label for="">Descripción de la mascota</label>
+                            <textarea name="form-descripcion-mascota" id="form-descripcion-mascota" rows="7" placeholder="Adjetivos de la mascota"></textarea>
+                        </div>
+
+                        <div class="buttons-form__container">
+                            <button>Registrar Chip</button>
+                            <button>Vaciar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
