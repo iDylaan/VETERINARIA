@@ -8,7 +8,7 @@ body {
 /* --------- ------ HEADER ------ --------- */
 
 header {
-     border: 5px solid red; 
+      
     background-color:  hsl(0, 0%, 20%);
     color: white;
     background-size: cover;
@@ -170,7 +170,7 @@ header {
     margin: auto;
     width: 150vh;
     border:  white 3px solid;
-    border-style:inherit;
+    
     padding-top: 1px;
     /*border: 5px solid red;*/
     
@@ -213,6 +213,7 @@ header {
         margin: auto;
         width: 150vh;
         border:  hsl(0, 0%, 95%) 3px solid;
+        box-shadow: 5px 5px 5px rgb(212, 211, 211);
         border-style:inherit;
         padding-top: 1px;
 }
