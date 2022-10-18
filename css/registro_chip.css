@@ -499,10 +499,12 @@ header {
 
 .input-select__container {
     margin-top: 30px;
+    color: hsl(0, 0%, 35%);
 }
 
 .input-date__container {
     margin-top: 30px;
+    color: hsl(0, 0%, 35%);
 }
 
 .input__container {
