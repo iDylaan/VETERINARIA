@@ -8,7 +8,7 @@
     border-radius: 50%;
 }
 
-img{
+.imagen{
  width:300px;
 height:300px;
 border-radius:2620px;
@@ -88,7 +88,7 @@ header {
     margin: 0;
     padding: 0;
    
-    
+    box-sizing: border-box;
 }
 
 
@@ -96,6 +96,7 @@ body {
     font-family: 'Rubik', sans-serif;
     background-image: url('../imagenes/petsbg.png');
     background-repeat: repeat;
+    height: 100%;
 }
 .pro{
     background-color: white;
@@ -120,4 +121,474 @@ body {
 	
 .center{
     justify-content: center;
+}
+.text{
+    color: aliceblue;
+}
+footer{
+    display: flex;
+    background-color: #00161d;
+}
+.redes {
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    border: 1px;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.politicas{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: right;
+}
+
+.politicas a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.titulo{
+    color: rgb(243, 243, 243);
+}
+h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  h1{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+.hero-section{
+    align-items: flex-start;
+    background-image: linear-gradient(deg, #f0f0f0 0%, #c7e4e9 150%);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+    list-style: none;
+    position: relative;
+    
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    text-transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
+  :root{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+  h1, p {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  /* ----------- Relevant Code Below ----- */
+  
+  div#container {
+    display: table;
+    
+    /* I want the whole search box
+       to be exactly this wide. */
+    width: 400px;
+    
+    margin: 50px auto 0;
+  }
+  div#container div.cell {
+    display: table-cell;
+  }
+  div#container div.cell:last-child {
+    /* Makes sure this cell is only wide enough
+       for the button label. */
+    width: 1px;
+  }
+  
+  input[type=search], div.button {  
+    width: 100%;
+    height: 35px;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  input[type=search] {
+    margin: 0;
+    padding: 0 10px;
+    
+    background-color: #f8f8f8;
+    
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  div.button {
+    line-height: 35px;
+  
+    margin: 0;
+    padding: 0 20px;
+  
+    color: #fff;
+    background-color: #FF1717;
+    font-weight: bold;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    white-space: nowrap;
+  }
+  .card-grid{
+    margin-top: -250px;
+  }
+
+  footer{
+    display: flex;
+    background-color: #00161d;
+}
+
+.redes {
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    border: 1px;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.copy{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.politicas{
+    margin: auto;
+    color: var(--white);
+    background-color: var(--letters-color);
+    padding: 2rem 0rem;
+    text-align: right;
+}
+
+.politicas a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.text{
+    color: aliceblue;
+    font-size: 55px;
+    margin-top: 85px;
 }
