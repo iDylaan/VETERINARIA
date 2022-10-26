@@ -7,6 +7,5 @@ function login(){
     if(user == "Admin" && pass == "1234"){
 
         window.location= ""; //pagina que abrira
-
     }
 }
