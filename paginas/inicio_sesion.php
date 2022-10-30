@@ -14,6 +14,21 @@
         <div class="formulario">
             <h1>Inicio de Sesion</h1>
             <form action="./index_sesion.html" method="post">
+
+                <hr>
+                <?php
+                    if (isset($_GET['error'])) {
+                        ?>
+                        <p class="error">
+                            <?php
+                                echo $_GET['error']
+                            ?>
+                        </p>
+                    <?php
+                    }
+                ?>
+                <hr>
+
                 <div class="username">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" name="usuario" required>
