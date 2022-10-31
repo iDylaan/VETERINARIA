@@ -1,6 +1,6 @@
 <?php
 session_start();
-include( ('Conexion.php');
+include( ('conexion.php');
 
 if (isset ($_POST[ 'Usuario']) && isset ($_POST['Clave']) {
 
@@ -23,7 +23,7 @@ if (isset ($_POST[ 'Usuario']) && isset ($_POST['Clave']) {
  }else{
 
     //$Clave = md5($Clave); //Ayudara al registro
-    $sql= = "SELECT * FROM usuarios WHERE Usuarios = '$Usuarios' AND Clave= '$Clave'";
+    $sql = "SELECT * FROM usuarios WHERE Usuarios = '$Usuarios' AND Clave= '$Clave'";
     $result = mysqli_query($conexion, $Sql);
     
     if (mysqli_num_row($result) === 1) {
