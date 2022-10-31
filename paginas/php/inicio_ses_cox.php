@@ -2,7 +2,7 @@
 include ('conexion.php');
 session_start();
 
-if (isset($_POST['correo']) && isset($_POST['contrasena']) { 
+if ( isset($_POST['correo']) && isset($_POST['contrasena']) ) { 
 
     function validate ($data){
         $data = tria($data);
@@ -15,10 +15,10 @@ if (isset($_POST['correo']) && isset($_POST['contrasena']) {
     $contrasena = validate($_POST['contrasena']);
 
     if (empty($correo)) {
-        header("Location: Index.php?error-E1 Usuario Es Requerido");
+        header("Location: ./inicio_sesion.php?error-E1 Usuario Es Requerido");
         exit();
     } elseif (empty(contrasena)) {
-        header( "Location: Index.php?error-La clave Es Requerida");
+        header( "Location: ./inicio_sesion.php?error-La clave Es Requerida");
         exit();
     } else {
 
@@ -46,7 +46,6 @@ if (isset($_POST['correo']) && isset($_POST['contrasena']) {
             exit();
         }
     }
-
 } else {
     header("Location: index.php ");
     exit();
