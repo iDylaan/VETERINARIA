@@ -1,10 +1,10 @@
 <?php
-    $host - "localhost";
-    $User
-             "root";
-    $pass
-    $db - "Intclosesiando";
-    Sconexion - mysqli_connect($host, $User F $pass, $db);
-    if ($$con){
-    echo "Conexion fallida";
-}
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "Intclosesiando";
+    $conexion = mysqli_connect($host, $user, $pass, $db);
+    if ( !$conexion ){
+        echo "Conexion fallida";
+        exit;
+    }

@@ -1,17 +1,17 @@
 <?php
+include ('conexion.php');
 session_start();
-include( ('conexion.php');
 
-if (isset ($_POST[ 'Usuario']) && isset ($_POST['Clave']) {
+if (isset ($_POST['correo']) && isset ($_POST['contrasena']) {
 
     function validate ($data){
-        $data - tria(Sdata);
-        $data a stripslashes(Sdata);
-        $data - htmlspecialchars($data);
+        $data = tria($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
         return $data;
     }
 
-    $Usuario = validate(S_POST[ 'Usuario']);
+    $Usuario = validate($_POST[ 'Usuario']);
     $Clave = validate($_POST['Clave']);
 
  if (empty($Usuario)) {
