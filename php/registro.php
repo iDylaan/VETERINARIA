@@ -1,5 +1,5 @@
 <?php
-    include 'bassarbd.php';
+    include 'veterinariabd.php';
 
     $id_usu = $_POST['id'];
     $correo_usu = $_POST['correo'];
