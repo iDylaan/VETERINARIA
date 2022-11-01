@@ -33,7 +33,7 @@ function eventListeners() {
     backMenu.addEventListener('click', ocultarMenuLateralMobile);
 
     // Redirecciones
-    btnIniciarSesion.addEventListener('click', () => window.location.href = '../paginas/inicio_sesion.html' );
+    btnCerrarSesion.addEventListener('click', () => window.location.href = '../paginas/inicio_sesion.html' );
     btnQuienesSomos.addEventListener('click', () => window.scrollTo(0, 4900) );
     btnUbicacionHeader.addEventListener('click', () => window.scrollTo(0, 3700) );
     btnLogo.addEventListener('click', () => window.location.href = '../index.html' );
@@ -43,11 +43,11 @@ function eventListeners() {
     btnCitas.addEventListener('click', () => window.location.href = './paginas/servicios/agenda_citas.html');
 
     // Redirecciones Nav Lateral Mobile
-    btnIniciarSesionMobile.addEventListener('click', () => window.location.href = '../paginas/inicio_sesion.html' );
+    btnCerrarSesionMobile.addEventListener('click', () => window.location.href = '../paginas/inicio_sesion.html' );
     btnQuienesSomosMobile.addEventListener('click', () => window.scrollTo(0, 4900) );
     btnUbicacionHeaderMobile.addEventListener('click', () => window.scrollTo(0, 3700) );
     btnHomeMobile.addEventListener('click', () => window.location.href = '#' );
-    btnCitasMobile.addEventListener('click', () => window.location.href = './paginas/servicios/agenda_citas.html');
+    btnChipsMobile.addEventListener('click', () => window.location.href = './paginas/servicios/agenda_citas.html');
 
 }
 
